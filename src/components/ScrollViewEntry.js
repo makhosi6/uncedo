@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import styled, { css } from "styled-components";
-import IoniconsIcon from '@material-ui/icons/AccessAlarmOutlined';
-import EvilIconsIcon from '@material-ui/icons/AccessAlarmOutlined';
+import IoniconsIcon from "react-native-vector-icons/dist/Ionicons";
+import EvilIconsIcon from "react-native-vector-icons/dist/EvilIcons";
 
 function ScrollViewEntry(props) {
   return (

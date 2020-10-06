@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import styled, { css } from "styled-components";
-import EvilIconsIcon from '@material-ui/icons/AccessAlarmOutlined';
+import EvilIconsIcon from "react-native-vector-icons/dist/EvilIcons";
 import { Link } from "react-router-dom";
 
 function Login(props) {
@@ -17,7 +17,6 @@ function Login(props) {
               </Text3Column>
             </Logo>
             <Form>
-                
               <UsernameColumn>
                 <Username>
                   <EvilIconsIcon

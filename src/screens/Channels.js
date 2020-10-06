@@ -1,97 +1,110 @@
 import React, { Component } from "react";
 import styled, { css } from "styled-components";
+import HeaderX from "../components/HeaderX";
 
-function Index(props) {
+function Channels(props) {
   return (
-    <Container>
-      <Tabs>
-        <Following>
-          <ButtonOverlay>
-            <Text>Following</Text>
-          </ButtonOverlay>
-        </Following>
-        <Popular>
-          <ButtonOverlay>
-            <Text2>Popular</Text2>
-          </ButtonOverlay>
-        </Popular>
-        <Button>
-          <ButtonOverlay>
-            <Text3>Explore</Text3>
-          </ButtonOverlay>
-        </Button>
-      </Tabs>
-      <Categories>
-        <Button2Row>
-          <Button2>
+    <Root>
+      <Body>
+        <Tabs>
+          <Following>
             <ButtonOverlay>
-              <Image>
-                <Rect8>
-                  <Text22>SCIENCE</Text22>
-                </Rect8>
-              </Image>
+              <Text>Following</Text>
             </ButtonOverlay>
-          </Button2>
-          <Button3>
+          </Following>
+          <Popular>
             <ButtonOverlay>
-              <Image2>
-                <Rect82>
-                  <Text23>TECHNOLOGY</Text23>
-                </Rect82>
-              </Image2>
+              <Text2>Popular</Text2>
             </ButtonOverlay>
-          </Button3>
-        </Button2Row>
-        <Button4Row>
-          <Button4>
+          </Popular>
+          <Button>
             <ButtonOverlay>
-              <Image3>
-                <Rect83>
-                  <Text24>FASHION</Text24>
-                </Rect83>
-              </Image3>
+              <Text3>Explore</Text3>
             </ButtonOverlay>
-          </Button4>
-          <Button5>
-            <ButtonOverlay>
-              <Image4>
-                <Rect84>
-                  <Text25>FINANCE</Text25>
-                </Rect84>
-              </Image4>
-            </ButtonOverlay>
-          </Button5>
-        </Button4Row>
-        <Button7Row>
-          <Button7>
-            <ButtonOverlay>
-              <Image22>
-                <Rect85>
-                  <Text26>ENVIRONMENT</Text26>
-                </Rect85>
-              </Image22>
-            </ButtonOverlay>
-          </Button7>
-          <Button6>
-            <ButtonOverlay>
-              <Image32>
-                <Rect86>
-                  <Text27>AUTO</Text27>
-                </Rect86>
-              </Image32>
-            </ButtonOverlay>
-          </Button6>
-        </Button7Row>
-      </Categories>
-    </Container>
+          </Button>
+        </Tabs>
+        <Categories>
+          <Button2Row>
+            <Button2>
+              <ButtonOverlay>
+                <Image>
+                  <Rect8>
+                    <Text22>SCIENCE</Text22>
+                  </Rect8>
+                </Image>
+              </ButtonOverlay>
+            </Button2>
+            <Button3>
+              <ButtonOverlay>
+                <Image2>
+                  <Rect82>
+                    <Text23>TECHNOLOGY</Text23>
+                  </Rect82>
+                </Image2>
+              </ButtonOverlay>
+            </Button3>
+          </Button2Row>
+          <Button4Row>
+            <Button4>
+              <ButtonOverlay>
+                <Image3>
+                  <Rect83>
+                    <Text24>FASHION</Text24>
+                  </Rect83>
+                </Image3>
+              </ButtonOverlay>
+            </Button4>
+            <Button5>
+              <ButtonOverlay>
+                <Image4>
+                  <Rect84>
+                    <Text25>FINANCE</Text25>
+                  </Rect84>
+                </Image4>
+              </ButtonOverlay>
+            </Button5>
+          </Button4Row>
+          <Button7Row>
+            <Button7>
+              <ButtonOverlay>
+                <Image22>
+                  <Rect85>
+                    <Text26>ENVIRONMENT</Text26>
+                  </Rect85>
+                </Image22>
+              </ButtonOverlay>
+            </Button7>
+            <Button6>
+              <ButtonOverlay>
+                <Image32>
+                  <Rect86>
+                    <Text27>AUTO</Text27>
+                  </Rect86>
+                </Image32>
+              </ButtonOverlay>
+            </Button6>
+          </Button7Row>
+        </Categories>
+      </Body>
+      <HeaderX
+        style={{
+          height: 80,
+          marginTop: -768,
+          boxShadow: "1px 7px 5px  0.1px rgba(0,0,0,1) "
+        }}
+        icon2Family="Feather"
+        icon2Name="search"
+      ></HeaderX>
+    </Root>
   );
 }
 
-const Container = styled.div`
+const Root = styled.div`
   display: flex;
+  background-color: rgb(255,255,255);
   flex-direction: column;
-  width: 1366px;
-  height: 688px;
+  height: 100vh;
+  width: 100vw;
 `;
 
 const ButtonOverlay = styled.button`
@@ -101,6 +114,13 @@ const ButtonOverlay = styled.button`
  width: 100%;
  border:none
  `;
+const Body = styled.div`
+  height: 688px;
+  flex-direction: column;
+  margin-top: 80px;
+  display: flex;
+`;
+
 const Tabs = styled.div`
   height: 80px;
   background-color: rgba(31,178,204,1);
@@ -430,4 +450,4 @@ const Button7Row = styled.div`
   margin-right: 14px;
 `;
 
-export default Index;
+export default Channels;

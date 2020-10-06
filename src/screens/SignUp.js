@@ -1,9 +1,9 @@
 import React, { Component } from "react";
 import styled, { css } from "styled-components";
-import IoniconsIcon  from '@material-ui/icons/AccessAlarmOutlined';
-import EntypoIcon from '@material-ui/icons/AccessAlarmOutlined';
-import FontAwesomeIcon from '@material-ui/icons/AccessAlarmOutlined';
-import EvilIconsIcon  from '@material-ui/icons/AccessAlarmOutlined';
+import IoniconsIcon from "react-native-vector-icons/dist/Ionicons";
+import EntypoIcon from "react-native-vector-icons/dist/Entypo";
+import FontAwesomeIcon from "react-native-vector-icons/dist/FontAwesome";
+import EvilIconsIcon from "react-native-vector-icons/dist/EvilIcons";
 import { Link } from "react-router-dom";
 
 function SignUp(props) {

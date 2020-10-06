@@ -1,23 +1,22 @@
 import React, { Component } from "react";
 import styled, { css } from "styled-components";
-import Header from "../comp/Header";
-import ScrollViewEntry from "../comp/ScrollViewEntry";
+import HeaderX from "../components/HeaderX";
+import ScrollViewEntry from "../components/ScrollViewEntry";
 
 function Timeline(props) {
   return (
     <Root>
-    <Header
-    style={{
-        height: 80,
-        boxShadow: "1px 7px 5px  0.1px rgba(0,0,0,1) "
-    }}
-    button="Settings"
-    ></Header>
+      <HeaderX
+        style={{
+          height: 80,
+          boxShadow: "1px 7px 5px  0.1px rgba(0,0,0,1) "
+        }}
+        button="Settings"
+      ></HeaderX>
       <Body>
         <Headline>
           <Image>
             <Overlay>
-              <ScienceChannel>TECHNOLOGY</ScienceChannel>
               <Following>
                 <Text>Following</Text>
               </Following>
@@ -71,6 +70,8 @@ const Body = styled.div`
   flex-direction: column;
   display: flex;
   flex: 1 1 0%;
+  margin-left: 7px;
+  margin-right: -7px;
 `;
 
 const Headline = styled.div`
@@ -85,7 +86,7 @@ const Image = styled.div`
   display: flex;
   flex: 1 1 0%;
   height: 100%;
-  background-image: url(${require("../assets/images/astronaut-astronomy-cosmos-2156.jpg")});
+  background-image: url(${require("../assets/images/astronaut-astronomy-cosmos-21561.jpg")});
   background-size: cover;
 `;
 
@@ -96,15 +97,6 @@ const Overlay = styled.div`
   flex: 1 1 0%;
 `;
 
-const ScienceChannel = styled.span`
-  font-family: Arial;
-  color: rgba(255,255,255,1);
-  font-size: 24px;
-  font-weight: bold;
-  margin-top: 43px;
-  align-self: center;
-`;
-
 const Following = styled.div`
   width: 90px;
   height: 40px;
@@ -113,7 +105,7 @@ const Following = styled.div`
   flex-direction: column;
   display: flex;
   justify-content: center;
-  margin-top: 28px;
+  margin-top: 103px;
   align-self: center;
 `;
 

@@ -1,9 +1,9 @@
 import React, { Component } from "react";
 import styled, { css } from "styled-components";
-import MaterialIconsIcon from '@material-ui/icons/AccessAlarmOutlined';
+import MaterialIconsIcon from "react-native-vector-icons/dist/MaterialIcons";
 import LogoHeader from "./LogoHeader";
 import { Link } from "react-router-dom";
-import FeatherIcon from '@material-ui/icons/AccessAlarmOutlined';
+import FeatherIcon from "react-native-vector-icons/dist/Feather";
 
 function HeaderX(props) {
   return (

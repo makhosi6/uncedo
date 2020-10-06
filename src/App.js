@@ -1,25 +1,25 @@
 import React from "react";
-import "./App.css";
+import { BrowserRouter as Router, Route } from "react-router-dom";
+import "./icons.js";
+import Channels from "./screens/Channels";
+import Feedback from "./screens/Feedback";
+import Login from "./screens/Login";
+import Settings from "./screens/Settings";
+import SignUp from "./screens/SignUp";
+import Timeline from "./screens/Timeline";
 import "./style.css";
-import Login from "./pages/Login";
-import { Switch, Route } from "react-router-dom";
-import SignUp from "./pages/Signup";
-import Settings  from "./pages/Settings";
-import Home from "./pages/Home";
-import Topic from "./pages/Topic";
-
 
 function App() {
   return (
-    <>
-      <Switch>
-        <Route exact path="/" component={Home} />
-        <Route exact path="/login" component={Login} />
-        <Route exact path="/sign-up" component={SignUp} />
-        <Route exact path="/topic" component={Topic} />
-        <Route exact path="/settings" component={Settings} />
-      </Switch>
-    </>
+    <Router>
+      <Route path="/" exact component={Channels} />
+      <Route path="/Channels/" exact component={Channels} />
+      <Route path="/Feedback/" exact component={Feedback} />
+      <Route path="/Login/" exact component={Login} />
+      <Route path="/Settings/" exact component={Settings} />
+      <Route path="/SignUp/" exact component={SignUp} />
+      <Route path="/Timeline/" exact component={Timeline} />
+    </Router>
   );
 }
 
