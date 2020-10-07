@@ -18,6 +18,7 @@ function Login(props) {
             </Logo>
             <Form>
               <UsernameColumn>
+                <Invisible></Invisible>
                 <Username>
                   <EvilIconsIcon
                     name="user"
@@ -45,7 +46,8 @@ function Login(props) {
                   ></EvilIconsIcon>
                   <PasswordInput
                     placeholder="Password"
-                    secureTextEntry={false}
+                    type="password" 
+                    secureTextEntry={true}
                   ></PasswordInput>
                 </Password>
               </UsernameColumn>
@@ -69,6 +71,7 @@ function Login(props) {
                 </ButtonOverlay>
               </Button2>
             </Link>
+            
             <Button2Filler></Button2Filler>
             <NeedHelp>Need Help?</NeedHelp>
           </FooterTexts>
@@ -145,7 +148,8 @@ const Form = styled.div`
   height: 230px;
   flex-direction: column;
   display: flex;
-  margin-top: 70px;
+  margin: 70px auto;
+  max-width: 600px;
 `;
 
 const Username = styled.div`
@@ -212,6 +216,16 @@ const Button = styled.div`
   display: flex;
   justify-content: center;
   border: none;
+
+`;
+const Invisible = styled.div`
+  border-radius: 5px;
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  border: none;
+  width: 50vw;
+
 `;
 
 const Text2 = styled.span`
@@ -223,7 +237,7 @@ const Text2 = styled.span`
 
 const LogoColumn = styled.div`
   flex-direction: column;
-  margin-top: 130px;
+  margin-top: 10vh;
   margin-left: 41px;
   margin-right: 41px;
   display: flex;
@@ -245,7 +259,7 @@ const FooterTexts = styled.div`
 `;
 
 const Button2 = styled.div`
-  width: 104px;
+
   height: 14px;
   flex-direction: column;
   display: flex;
@@ -271,6 +285,7 @@ const Button2Filler = styled.div`
 `;
 
 const NeedHelp = styled.span`
+  text-decoration: none;
   font-family: Arial;
   color: rgba(255,255,255,0.5);
   align-self: flex-end;

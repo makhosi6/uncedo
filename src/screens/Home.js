@@ -1,6 +1,7 @@
-import React, { Component } from "react";
-import styled, { css } from "styled-components";
-import HeaderX from "../components/HeaderX";
+import React from "react";
+import styled from "styled-components";
+import { ShieldAlertIcon } from "@fluentui/react-icons";
+
 
 function Channels(props) {
   return (
@@ -9,19 +10,9 @@ function Channels(props) {
         <Tabs>
           <Following>
             <ButtonOverlay>
-              <Text>Following</Text>
+              <Text >SOS </Text>
             </ButtonOverlay>
           </Following>
-          <Popular>
-            <ButtonOverlay>
-              <Text2>Popular</Text2>
-            </ButtonOverlay>
-          </Popular>
-          <Button>
-            <ButtonOverlay>
-              <Text3>Explore</Text3>
-            </ButtonOverlay>
-          </Button>
         </Tabs>
         <Categories>
           <Button2Row>
@@ -86,15 +77,6 @@ function Channels(props) {
           </Button7Row>
         </Categories>
       </Body>
-      <HeaderX
-        style={{
-          height: 80,
-          marginTop: -768,
-          boxShadow: "1px 7px 5px  0.1px rgba(0,0,0,1) "
-        }}
-        icon2Family="Feather"
-        icon2Name="search"
-      ></HeaderX>
     </Root>
   );
 }
@@ -117,9 +99,9 @@ const ButtonOverlay = styled.button`
 const Body = styled.div`
   height: 688px;
   flex-direction: column;
-  margin-top: 80px;
   display: flex;
 `;
+
 
 const Tabs = styled.div`
   height: 80px;
@@ -145,6 +127,7 @@ const Following = styled.div`
   flex-direction: column;
   display: flex;
   justify-content: center;
+  margin: 0 auto 0 20px;
   border-style: solid;
 `;
 
@@ -152,6 +135,7 @@ const Text = styled.span`
   font-family: Arial;
   color: rgba(255,255,255,1);
   align-self: center;
+  font-weight: bold;
 `;
 
 const Popular = styled.div`
@@ -272,6 +256,7 @@ const Text23 = styled.span`
 `;
 
 const Button2Row = styled.div`
+  justify-content: center;
   height: 158px;
   flex-direction: row;
   display: flex;
@@ -355,6 +340,7 @@ const Text25 = styled.span`
 `;
 
 const Button4Row = styled.div`
+justify-content: center;
   height: 158px;
   flex-direction: row;
   display: flex;
@@ -442,9 +428,11 @@ const Text27 = styled.span`
 `;
 
 const Button7Row = styled.div`
+  justify-content: center;
   height: 158px;
   flex-direction: row;
   display: flex;
+  margin-top: 43px;
   margin-bottom: 30px;
   margin-left: 15px;
   margin-right: 14px;

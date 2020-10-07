@@ -2,3 +2,9 @@
         font-family: "roboto-regular";
         src: url("./assets/fonts/roboto-regular.ttf") format("truetype");
       }
+
+      ::placeholder {
+        color: rgb(197, 197, 197) !important;
+        font-style: italic !important;
+ 
+      }

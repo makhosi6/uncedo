@@ -1,6 +1,5 @@
 import React, { Component } from "react";
 import styled, { css } from "styled-components";
-import HeaderX from "../components/HeaderX";
 import EvilIconsIcon from "react-native-vector-icons/dist/EvilIcons";
 import FontAwesomeIcon from "react-native-vector-icons/dist/FontAwesome";
 import IoniconsIcon from "react-native-vector-icons/dist/Ionicons";
@@ -9,13 +8,7 @@ import GoogleMapReact from "google-map-react";
 function Feedback(props) {
   return (
     <Root>
-      <HeaderX
-        style={{
-          height: 80,
-          boxShadow: "1px 7px 5px  0.1px rgba(0,0,0,1) "
-        }}
-        button="Settings"
-      ></HeaderX>
+     
       <Body>
         <Background>
           <Rect7>
@@ -34,12 +27,12 @@ function Feedback(props) {
                         alignSelf: "center"
                       }}
                     ></EvilIconsIcon>
-                    <TextInput2 placeholder="Stan Smith"></TextInput2>
+                    <TextInput2 type="text" placeholder="Stan Smith"></TextInput2>
                   </Name>
                   <NameFiller></NameFiller>
                   <Email>
                     <FontAwesomeIcon
-                      name={props.iconName || "envelope-o"}
+                      name={props.iconName || "phone"}
                       style={{
                         color: "rgba(255,255,255,1)",
                         fontSize: 18,
@@ -47,14 +40,15 @@ function Feedback(props) {
                         alignSelf: "center"
                       }}
                     ></FontAwesomeIcon>
-                    <TextInput3 placeholder="stan@stansmith.com"></TextInput3>
+                    <TextInput3 type="number" placeholder="081 234 5678"></TextInput3>
+                    
                   </Email>
                 </Form>
               </Text4Column>
               <Text4ColumnFiller></Text4ColumnFiller>
               <Rect8>
                 <TextInput4Stack>
-                  <TextInput4 placeholder="Write something..."></TextInput4>
+                  <TextInput4  placeholder="Write something..."></TextInput4>
                   <IoniconsIcon
                     name="md-arrow-forward"
                     style={{
@@ -127,7 +121,7 @@ const Text4 = styled.span`
   color: rgba(255,255,255,1);
   font-size: 24px;
   font-weight: bold;
-  margin-left: 78px;
+  margin: 10px auto;
 `;
 
 const Text42 = styled.span`
@@ -224,7 +218,8 @@ const Rect8 = styled.div`
   border-style: solid;
 `;
 
-const TextInput4 = styled.input`
+const TextInput4 = styled.textarea`
+  width: 300px;
   font-family: Arial;
   top: 0px;
   left: 0px;

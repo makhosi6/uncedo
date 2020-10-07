@@ -1,18 +1,12 @@
 import React, { Component } from "react";
 import styled, { css } from "styled-components";
-import HeaderX from "../components/HeaderX";
+import HeaderX from "../components/Header";
+import Article from "../components/Article";
 import ScrollViewEntry from "../components/ScrollViewEntry";
 
 function Timeline(props) {
   return (
     <Root>
-      <HeaderX
-        style={{
-          height: 80,
-          boxShadow: "1px 7px 5px  0.1px rgba(0,0,0,1) "
-        }}
-        button="Settings"
-      ></HeaderX>
       <Body>
         <Headline>
           <Image>
@@ -25,33 +19,12 @@ function Timeline(props) {
           </Image>
         </Headline>
         <ScrollArea>
-          <ScrollViewEntry
-            style={{
-              height: 100,
-              flex: "0 0 auto"
-            }}
-          ></ScrollViewEntry>
-          <ScrollViewEntry
-            style={{
-              width: 360,
-              height: 100,
-              flex: "0 0 auto"
-            }}
-          ></ScrollViewEntry>
-          <ScrollViewEntry
-            style={{
-              width: 360,
-              height: 100,
-              flex: "0 0 auto"
-            }}
-          ></ScrollViewEntry>
-          <ScrollViewEntry
-            style={{
-              width: 360,
-              height: 100,
-              flex: "0 0 auto"
-            }}
-          ></ScrollViewEntry>
+          <ScrollViewEntry/>
+          <ScrollViewEntry/>
+        <Article />
+        <Article/>
+        <Article />
+        <Article/>
         </ScrollArea>
       </Body>
     </Root>
@@ -60,7 +33,7 @@ function Timeline(props) {
 
 const Root = styled.div`
   display: flex;
-  background-color: rgb(255,255,255);
+  background-color: rgb(255, 255, 255);
   flex-direction: column;
   height: 100vh;
   width: 100vw;
@@ -70,8 +43,6 @@ const Body = styled.div`
   flex-direction: column;
   display: flex;
   flex: 1 1 0%;
-  margin-left: 7px;
-  margin-right: -7px;
 `;
 
 const Headline = styled.div`
@@ -91,7 +62,7 @@ const Image = styled.div`
 `;
 
 const Overlay = styled.div`
-  background-color: rgba(30,26,26,0.4);
+  background-color: rgba(30, 26, 26, 0.4);
   flex-direction: column;
   display: flex;
   flex: 1 1 0%;
@@ -100,7 +71,7 @@ const Overlay = styled.div`
 const Following = styled.div`
   width: 90px;
   height: 40px;
-  background-color: rgba(255,255,255,1);
+  background-color: rgba(255, 255, 255, 1);
   border-radius: 5px;
   flex-direction: column;
   display: flex;
@@ -111,7 +82,7 @@ const Following = styled.div`
 
 const Text = styled.span`
   font-family: Arial;
-  color: rgba(31,178,204,1);
+  color: rgba(31, 178, 204, 1);
   font-size: 14px;
   font-weight: bold;
   align-self: center;
@@ -119,7 +90,7 @@ const Text = styled.span`
 
 const Followers = styled.span`
   font-family: Arial;
-  color: rgba(255,255,255,1);
+  color: rgba(255, 255, 255, 1);
   font-size: 16px;
   font-weight: bold;
   margin-top: 39px;
@@ -128,7 +99,6 @@ const Followers = styled.span`
 
 const ScrollArea = styled.div`
   overflow-y: scroll;
-  height: 413px;
   flex-direction: column;
   display: flex;
 `;

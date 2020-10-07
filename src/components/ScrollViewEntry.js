@@ -1,5 +1,5 @@
-import React, { Component } from "react";
-import styled, { css } from "styled-components";
+import React from "react";
+import styled from "styled-components";
 import IoniconsIcon from "react-native-vector-icons/dist/Ionicons";
 import EvilIconsIcon from "react-native-vector-icons/dist/EvilIcons";
 
@@ -7,7 +7,7 @@ function ScrollViewEntry(props) {
   return (
     <Container {...props}>
       <Text2Stack>
-        <Text2>SpaceX goes to Mars: To setup establishment by 2040</Text2>
+        <Text2>SpaceX goes to Mars: To setup establishment by 2040 </Text2>
         <Rect2>
           <IconRow>
             <IoniconsIcon
@@ -39,11 +39,11 @@ const Container = styled.div`
   flex-direction: column;
 `;
 
-const Text2 = styled.span`
+const Text2 = styled.p`
   font-family: Arial;
   top: 0px;
   left: 0px;
-  width: 320px;
+  width: 620px;
   height: 56px;
   color: #121212;
   position: absolute;
@@ -86,7 +86,7 @@ const IconRow = styled.div`
 `;
 
 const Text2Stack = styled.div`
-  width: 320px;
+
   height: 72px;
   margin-top: 9px;
   margin-left: 22px;

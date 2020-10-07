@@ -1,23 +1,25 @@
 import React from "react";
 import { BrowserRouter as Router, Route } from "react-router-dom";
 import "./icons.js";
-import Channels from "./screens/Channels";
-import Feedback from "./screens/Feedback";
+import Home from "./screens/Home";
+import Sos from "./screens/Sos";
 import Login from "./screens/Login";
 import Settings from "./screens/Settings";
 import SignUp from "./screens/SignUp";
 import Timeline from "./screens/Timeline";
+import Nav from "../src/components/Nav"
 import "./style.css";
+
 
 function App() {
   return (
     <Router>
-      <Route path="/" exact component={Channels} />
-      <Route path="/Channels/" exact component={Channels} />
-      <Route path="/Feedback/" exact component={Feedback} />
-      <Route path="/Login/" exact component={Login} />
-      <Route path="/Settings/" exact component={Settings} />
-      <Route path="/SignUp/" exact component={SignUp} />
+      <Route path="/" exact component={Home} />
+      <Route path="/nav" exact component={Nav} />
+      <Route path="/emergency/sos" exact component={Sos} />
+      <Route path="/login/" exact component={Login} />
+      <Route path="/settings/" exact component={Settings} />
+      <Route path="/sign-up/" exact component={SignUp} />
       <Route path="/Timeline/" exact component={Timeline} />
     </Router>
   );

@@ -5,6 +5,7 @@ import EntypoIcon from "react-native-vector-icons/dist/Entypo";
 import FontAwesomeIcon from "react-native-vector-icons/dist/FontAwesome";
 import EvilIconsIcon from "react-native-vector-icons/dist/EvilIcons";
 import { Link } from "react-router-dom";
+import ProgressBar2 from "../components/ProgressBar";
 
 function SignUp(props) {
   return (
@@ -86,6 +87,7 @@ function SignUp(props) {
                 </Email>
               </NameColumn>
               <NameColumnFiller></NameColumnFiller>
+              <Invisible></Invisible>
               <Password>
                 <EvilIconsIcon
                   name="lock"
@@ -96,11 +98,11 @@ function SignUp(props) {
                     marginTop: 13
                   }}
                 ></EvilIconsIcon>
-                <PasswordInput placeholder="Password"></PasswordInput>
+                <PasswordInput type="password" placeholder="Password"></PasswordInput>
               </Password>
             </Form>
           </ProgressBarColumn>
-          <ProgressBarColumnFiller></ProgressBarColumnFiller>
+          {/* <ProgressBarColumnFiller></ProgressBarColumnFiller> */}
           <ButtonColumn>
             <Link to="/Timeline">
               <Button>
@@ -109,6 +111,7 @@ function SignUp(props) {
                 </ButtonOverlay>
               </Button>
             </Link>
+            <Invisible/>
             <Text4>Terms &amp; Conditions</Text4>
           </ButtonColumn>
         </Rect2>
@@ -123,6 +126,15 @@ const Root = styled.div`
   flex-direction: column;
   height: 100vh;
   width: 100vw;
+`;
+const Invisible = styled.div`
+  border-radius: 5px;
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  border: none;
+  width: 50vw;
+
 `;
 
 const ButtonOverlay = styled.button`
@@ -146,6 +158,7 @@ const Rect2 = styled.div`
 `;
 
 const ProgressBar = styled.div`
+border: 1px solid black;
   height: 40px;
   flex-direction: row;
   display: flex;
@@ -197,6 +210,8 @@ const Form = styled.div`
   flex-direction: column;
   display: flex;
   margin-top: 108px;
+  margin: 70px auto;
+  max-width: 600px;
 `;
 
 const Name = styled.div`
@@ -319,10 +334,10 @@ const Text4 = styled.span`
 `;
 
 const ButtonColumn = styled.div`
+margin: 70px auto;
+max-width: 600px;
   flex-direction: column;
   margin-bottom: 31px;
-  margin-left: 41px;
-  margin-right: 41px;
   display: flex;
 `;
 
