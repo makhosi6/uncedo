@@ -1,10 +1,7 @@
 import React from "react";
 import styled from "styled-components";
-import { ListIcon, SettingsIcon } from "@fluentui/react-icons";
-// import { Link } from "react-router-dom";
 
 function HeaderX(props) {
-  console.log({ ListIcon });
   return (
     <Container {...props}>
       <Group>
@@ -14,23 +11,7 @@ function HeaderX(props) {
           />
         </IconRow>
         <IconRowFiller></IconRowFiller>
-        <div
-          style={{
-            width: "100%",
-            justifyContent: "space-around",
-          }}
-        >
-          <div
-            style={{
-              maxWidth: "max-content",
-              margin: "auto",
-              color: "whitesmoke"
-            }}
-          >
-            <h5>LOGO</h5>
-          </div>
-        </div>
-        <IconRowFiller></IconRowFiller>
+   
         {/* <Link to="/Settings"> */}
           <Button>
             <ButtonOverlay /* Conditional navigation not supported at the moment */

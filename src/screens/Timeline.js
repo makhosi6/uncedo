@@ -1,8 +1,6 @@
-import React, { Component } from "react";
-import styled, { css } from "styled-components";
-import HeaderX from "../components/Header";
+import React from "react";
+import styled from "styled-components";
 import Article from "../components/Article";
-import ScrollViewEntry from "../components/ScrollViewEntry";
 
 function Timeline(props) {
   return (
@@ -19,8 +17,18 @@ function Timeline(props) {
           </Image>
         </Headline>
         <ScrollArea>
-          <ScrollViewEntry/>
-          <ScrollViewEntry/>
+        <Article />
+        <Article/>
+        <Article />
+        <Article/>
+        <Article />
+        <Article/>
+        <Article />
+        <Article/>
+        <Article />
+        <Article/>
+        <Article />
+        <Article/>
         <Article />
         <Article/>
         <Article />
@@ -98,8 +106,15 @@ const Followers = styled.span`
 `;
 
 const ScrollArea = styled.div`
-  overflow-y: scroll;
+  overflow-y: scroll; 
+  top: 300px;
+  left: 0px;
+  background-color: #fffff
+  position: absolute;
   flex-direction: column;
+  right: 0px;
+  bottom: 50px;
+  justify-content: flex-start;
   display: flex;
 `;
 

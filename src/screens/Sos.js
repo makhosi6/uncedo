@@ -1,5 +1,5 @@
-import React, { Component } from "react";
-import styled, { css } from "styled-components";
+import React from "react";
+import styled from "styled-components";
 import EvilIconsIcon from "react-native-vector-icons/dist/EvilIcons";
 import FontAwesomeIcon from "react-native-vector-icons/dist/FontAwesome";
 import IoniconsIcon from "react-native-vector-icons/dist/Ionicons";
@@ -8,7 +8,6 @@ import GoogleMapReact from "google-map-react";
 function Feedback(props) {
   return (
     <Root>
-     
       <Body>
         <Background>
           <Rect7>

@@ -3,13 +3,12 @@ import Header from "../components/Header";
 
 export default function Nav() {
   return (
-    <div>
-      <Header
-        style={{
-          boxShadow: "#0000004f 1px 7px 15px 0.1px",
-        }}
+    <nav style={{
+      backgroundColor: "rgba(31, 178, 204, 1)"
+    }} >
+      <Header 
         button="Settings"
       ></Header>{" "}
-    </div>
+    </nav>
   );
 }

@@ -1,11 +1,10 @@
-import React, { Component } from "react";
-import styled, { css } from "styled-components";
+import React from "react";
+import styled from "styled-components";
 import IoniconsIcon from "react-native-vector-icons/dist/Ionicons";
 import EntypoIcon from "react-native-vector-icons/dist/Entypo";
 import FontAwesomeIcon from "react-native-vector-icons/dist/FontAwesome";
 import EvilIconsIcon from "react-native-vector-icons/dist/EvilIcons";
 import { Link } from "react-router-dom";
-import ProgressBar2 from "../components/ProgressBar";
 
 function SignUp(props) {
   return (
@@ -102,7 +101,6 @@ function SignUp(props) {
               </Password>
             </Form>
           </ProgressBarColumn>
-          {/* <ProgressBarColumnFiller></ProgressBarColumnFiller> */}
           <ButtonColumn>
             <Link to="/Timeline">
               <Button>
@@ -298,12 +296,6 @@ const ProgressBarColumn = styled.div`
   margin-top: 53px;
   margin-left: 41px;
   margin-right: 41px;
-  display: flex;
-`;
-
-const ProgressBarColumnFiller = styled.div`
-  flex: 1 1 0%;
-  flex-direction: column;
   display: flex;
 `;
 

@@ -1,5 +1,5 @@
-import React, { Component } from "react";
-import styled, { css } from "styled-components";
+import React from "react";
+import styled  from "styled-components";
 import HeaderX from "../components/Header";
 import IoniconsIcon from "react-native-vector-icons/dist/Ionicons";
 import MaterialUISwitch from "@material-ui/core/Switch";

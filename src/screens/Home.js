@@ -1,7 +1,5 @@
 import React from "react";
 import styled from "styled-components";
-import { ShieldAlertIcon } from "@fluentui/react-icons";
-
 
 function Channels(props) {
   return (
@@ -11,6 +9,11 @@ function Channels(props) {
           <Following>
             <ButtonOverlay>
               <Text >SOS </Text>
+            </ButtonOverlay>
+          </Following>
+          <Following>
+            <ButtonOverlay>
+              <Text >Chat </Text>
             </ButtonOverlay>
           </Following>
         </Tabs>
@@ -96,6 +99,7 @@ const ButtonOverlay = styled.button`
  width: 100%;
  border:none
  `;
+
 const Body = styled.div`
   height: 688px;
   flex-direction: column;
@@ -136,42 +140,6 @@ const Text = styled.span`
   color: rgba(255,255,255,1);
   align-self: center;
   font-weight: bold;
-`;
-
-const Popular = styled.div`
-  width: 100px;
-  height: 38px;
-  background-color: rgba(247,247,247,0);
-  align-self: center;
-  border-radius: 100px;
-  flex-direction: column;
-  display: flex;
-  justify-content: center;
-  border: none;
-`;
-
-const Text2 = styled.span`
-  font-family: Arial;
-  color: rgba(255,255,255,1);
-  align-self: center;
-`;
-
-const Button = styled.div`
-  width: 100px;
-  height: 38px;
-  background-color: rgba(247,247,247,0);
-  align-self: center;
-  border-radius: 100px;
-  flex-direction: column;
-  display: flex;
-  justify-content: center;
-  border: none;
-`;
-
-const Text3 = styled.span`
-  font-family: Arial;
-  color: rgba(255,255,255,1);
-  align-self: center;
 `;
 
 const Categories = styled.div`

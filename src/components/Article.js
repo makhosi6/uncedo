@@ -6,6 +6,7 @@ import Grid from "@material-ui/core/Grid";
 import Box from "@material-ui/core/Box";
 import Paper from "@material-ui/core/Paper";
 import Link from "@material-ui/core/Link";
+import { ClockIcon, GlobeIcon } from "@fluentui/react-icons";
 import styled from "styled-components";
 
 const useStyles = makeStyles((theme) => ({
@@ -72,18 +73,14 @@ export default function Article(prop) {
                       color="textSecondary"
                       gutterBottom
                       variant="body2"
-                    >
-                      </Typography>{" "}
+                    ></Typography>{" "}
                     <Typography variant="subtitle1" gutterBottom>
                       <Box
                         fontWeight="fontWeightBold"
                         lineHeight="normal"
                         m={1}
                       >
-                        <Link
-                          color="inherit"
-                          href="https://google.com?q=taken"
-                        >
+                        <Link color="inherit" href="https://google.com?q=taken">
                           SpaceX goes to Mars: To setup establishment by 2040
                         </Link>{" "}
                       </Box>{" "}
@@ -110,7 +107,10 @@ export default function Article(prop) {
                         p={0}
                         m={1}
                       >
-                        <Text4>Oct 5, 2019</Text4>
+                        <Text4>
+                          <ClockIcon style={{ marginBottom: "5px", color: "#776f6f" }} /> Oct 5,
+                          2019
+                        </Text4>
                       </Box>{" "}
                       <Box
                         lineHeight="normal"
@@ -120,7 +120,17 @@ export default function Article(prop) {
                         p={1}
                         m={1}
                       >
-                        <Text3>SPACE.com</Text3>
+                        <Text3>
+                          <Link
+                            color="inherit"
+                            href="https://google.com?q=taken"
+                          >
+                            <GlobeIcon 
+                              style={{ marginBottom: "5px" , color: "#776f6f",marginRight: "5px"}} 
+                            /> 
+                            SPACE.com
+                          </Link>
+                        </Text3>
                       </Box>{" "}
                       <Box
                         lineHeight="normal"
@@ -144,16 +154,14 @@ export default function Article(prop) {
 
 const Text3 = styled.span`
   font-family: Arial;
-  color: #121212;
+  color: #000000;
   font-size: 14px;
-  margin-left: 16px;
   margin-top: 1px;
 `;
 
 const Text4 = styled.span`
   font-family: Arial;
-  color: #121212;
+  color: #000000;
   font-size: 14px;
-  margin-left: 17px;
   margin-top: 3px;
 `;

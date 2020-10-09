@@ -12,8 +12,12 @@ code {
     monospace;
 }
 
-
 article > div {
   /* box-shadow: none !important; */
   border-radius: 0% !important;
+}
+
+body, html{
+  max-width: 100vw !important;
+  overflow: hidden !important;
 }
