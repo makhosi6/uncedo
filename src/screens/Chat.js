@@ -5,6 +5,8 @@ import Strip from "../components/Strip";
 import Footer from "../components/Footer";
 
 function Notifications(props) {
+  const scrllArea = React.useRef();
+
   return (
     <Container>
       <TabSection>
@@ -43,7 +45,9 @@ function Notifications(props) {
           ></MaterialCommunityIconsIcon> */}
         </Center>
       </Header>
-      <ScrollArea>
+      <ScrollArea className="scroll-area" ref={scrllArea} onScroll={(e) => {
+
+      } }>
       <Strip/>
       <Strip/>
       <Strip/>
@@ -60,19 +64,10 @@ function Notifications(props) {
       <Strip/>
       <Strip/>
       </ScrollArea>
-      <Footer
-        style={{
-          border: "1px solid white",
-          left: 0,
-          height: 50,
-          position: "absolute",
-          right: 0,
-          bottom: 0
-        }}
-      ></Footer>
     </Container>
   );
 }
+
 
 const Container = styled.div`
   background-color: #fff;
@@ -84,7 +79,7 @@ const Container = styled.div`
 `;
 
 const TabSection = styled.div`
-  top: 12.36%;
+  top: 6.36%;
   left: 0px;
   height: 58px;
   position: absolute;
@@ -100,13 +95,13 @@ const TabSection = styled.div`
 
 const NotifsTab = styled.div`
   width: 127px;
-  height: 59px;
+  height: 51px;
   align-self: center;
   margin-right: 0px;
   margin-left: 0px;
   border-color: #1fb2cc;
   border-width: 0px;
-  border-bottom-width: 3px;
+  border-bottom-width: 8px;
   border-style: solid;
   position: relative;
   display: flex;
@@ -187,7 +182,7 @@ const Text3 = styled.span`
 `;
 
 const Header = styled.div`
-  top: 21px;
+  top: 0px;
   left: 0px;
   height: 60px;
   position: absolute;
@@ -216,13 +211,14 @@ const Text4 = styled.span`
 
 const ScrollArea = styled.div`
   overflow-y: scroll;
+  z-index: 100;
   top: 140px;
   left: 0px;
   background-color: #fffff
   position: absolute;
   flex-direction: column;
   right: 0px;
-  bottom: 50px;
+  bottom: 0;
   justify-content: flex-start;
   display: flex;
 `;

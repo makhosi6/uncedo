@@ -21,3 +21,11 @@ body, html{
   max-width: 100vw !important;
   overflow: hidden !important;
 }
+
+
+@media only screen and (max-width: 600px) {
+  .scroll-area {
+    top: 120px !important;
+  }
+}
+

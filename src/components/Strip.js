@@ -4,7 +4,7 @@ import NotificationComponent from "./NotificationComponent";
 
 export default function Strip() {
     return (
-        <div>
+        <article>
             <NotificationComponent
           style={{
             height: 110,
@@ -19,6 +19,6 @@ export default function Strip() {
             flex: "0 0 auto"
           }}
         ></Divider>
-        </div>
+        </article>
     )
 }

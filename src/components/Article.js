@@ -6,20 +6,22 @@ import Grid from "@material-ui/core/Grid";
 import Box from "@material-ui/core/Box";
 import Paper from "@material-ui/core/Paper";
 import Link from "@material-ui/core/Link";
+import Divider from "./Divider"
 import { ClockIcon, GlobeIcon } from "@fluentui/react-icons";
 import styled from "styled-components";
 
 const useStyles = makeStyles((theme) => ({
   root: {
-    marginTop: "10px",
-    margin: "10px auto",
+    boxShadow: "none",
+    margin: "0 auto",
     display: "flex",
-    maxWidth: 700,
+    maxWidth: 1000,
   },
   paper: {
+    boxShadow: "none",
     padding: theme.spacing(1),
     // background: "#ecececde",
-    maxWidth: 700,
+    maxWidth: 1000,
   },
   details: {
     display: "flex",
@@ -29,7 +31,7 @@ const useStyles = makeStyles((theme) => ({
   },
   content: {
     // backgroundColor: "#ecececde",
-    maxWidth: 700,
+    maxWidth: 1000,
     flex: "5 0 auto",
   },
   cover: {
@@ -40,7 +42,7 @@ const useStyles = makeStyles((theme) => ({
     maxHeight: "150px",
     margin: "0 auto",
     width: "40%",
-    borderRightColor: "#bfbbbb",
+    // borderRightColor: "#bfbbbb",
   },
   controls: {
     // backgroundColor: "#/ecececde",
@@ -61,6 +63,7 @@ export default function Article(prop) {
   const classes = useStyles();
 
   return (
+    <>
     <article>
       <Card className={classes.root}>
         <div className={classes.details}>
@@ -148,7 +151,17 @@ export default function Article(prop) {
           </Paper>{" "}
         </div>{" "}
       </Card>
+      <Divider
+          style={{
+            maxWidth: "1000px",
+            margin: "auto",
+            height: 1,
+            alignSelf: "stretch",
+            flex: "0 0 auto"
+          }}
+        ></Divider>
     </article>
+    </>
   );
 }
 

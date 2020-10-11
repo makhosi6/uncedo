@@ -107,13 +107,13 @@ const Followers = styled.span`
 
 const ScrollArea = styled.div`
   overflow-y: scroll; 
-  top: 300px;
+  top: 312px;
   left: 0px;
   background-color: #fffff
   position: absolute;
   flex-direction: column;
   right: 0px;
-  bottom: 50px;
+  bottom: -42px;
   justify-content: flex-start;
   display: flex;
 `;

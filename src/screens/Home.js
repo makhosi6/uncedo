@@ -5,7 +5,7 @@ function Channels(props) {
   return (
     <Root>
       <Body>
-        <Tabs>
+        {/* <Tabs>
           <Following>
             <ButtonOverlay>
               <Text >SOS </Text>
@@ -16,8 +16,49 @@ function Channels(props) {
               <Text >Chat </Text>
             </ButtonOverlay>
           </Following>
-        </Tabs>
+        </Tabs> */}
+<ScrollArea>
         <Categories>
+          <Button2Row>
+            <Button2>
+              <ButtonOverlay>
+                <Image>
+                  <Rect8>
+                    <Text22>SCIENCE</Text22>
+                  </Rect8>
+                </Image>
+              </ButtonOverlay>
+            </Button2>
+            <Button3>
+              <ButtonOverlay>
+                <Image2>
+                  <Rect82>
+                    <Text23>TECHNOLOGY</Text23>
+                  </Rect82>
+                </Image2>
+              </ButtonOverlay>
+            </Button3>
+          </Button2Row>
+          <Button2Row>
+            <Button2>
+              <ButtonOverlay>
+                <Image>
+                  <Rect8>
+                    <Text22>SCIENCE</Text22>
+                  </Rect8>
+                </Image>
+              </ButtonOverlay>
+            </Button2>
+            <Button3>
+              <ButtonOverlay>
+                <Image2>
+                  <Rect82>
+                    <Text23>TECHNOLOGY</Text23>
+                  </Rect82>
+                </Image2>
+              </ButtonOverlay>
+            </Button3>
+          </Button2Row>
           <Button2Row>
             <Button2>
               <ButtonOverlay>
@@ -79,6 +120,7 @@ function Channels(props) {
             </Button6>
           </Button7Row>
         </Categories>
+        </ScrollArea>
       </Body>
     </Root>
   );
@@ -88,8 +130,8 @@ const Root = styled.div`
   display: flex;
   background-color: rgb(255,255,255);
   flex-direction: column;
-  height: 100vh;
-  width: 100vw;
+  margin: auto;
+  max-width: 1000px;
 `;
 
 const ButtonOverlay = styled.button`
@@ -101,11 +143,22 @@ const ButtonOverlay = styled.button`
  `;
 
 const Body = styled.div`
-  height: 688px;
   flex-direction: column;
   display: flex;
 `;
 
+const ScrollArea = styled.div`
+  overflow-y: scroll;
+  top: 60px;
+  margin: auto;
+  max-width: 1000px;
+  left: 0px;
+  background-color: #fffff
+  position: absolute;
+  right: 0px;
+  bottom: 0px;
+
+`;
 
 const Tabs = styled.div`
   height: 80px;

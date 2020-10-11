@@ -1,17 +1,19 @@
 import React from "react";
 import styled from "styled-components";
-import { ListIcon, SettingsIcon } from "@fluentui/react-icons";
+import SettingsOptions  from "./utili/OptBtn";
+import Menu from "./Menu";
+import Speeddial from "./utili/Speaddial";
 // import { Link } from "react-router-dom";
 
 function HeaderX(props) {
-  console.log({ ListIcon });
+  
   return (
     <Container {...props}>
       <Group>
         <IconRow>
-          <ListIcon
-            style={{ color: "white", marginTop: "10px", fontSize: "28px" }}
-          />
+          <IconRow>
+              <Menu/>
+          </IconRow>
         </IconRow>
         <IconRowFiller></IconRowFiller>
         <div
@@ -35,11 +37,12 @@ function HeaderX(props) {
           <Button>
             <ButtonOverlay /* Conditional navigation not supported at the moment */
             >
-              <SettingsIcon style={{ color: "white", fontSize: "25px" }} />
+              <SettingsOptions />
             </ButtonOverlay>
           </Button>
         {/* </Link> */}
       </Group>
+      <Speeddial/>
     </Container>
   );
 }
@@ -49,7 +52,6 @@ const Container = styled.div`
   margin: auto;
   display: flex;
   flex-direction: column;
-  padding: 0 20px;
 `;
 
 const ButtonOverlay = styled.button`
@@ -69,7 +71,7 @@ const IconRow = styled.div`
   height: 44px;
   flex-direction: row;
   margin-left: 10px;
-  margin-top: 6px;
+ 
   display: flex;
 `;
 
