@@ -12,15 +12,16 @@ import Timeline from "./screens/Timeline";
 import Message from "./screens/Message";
 import Chat from "./screens/Chat";
 import Nav from "../src/components/Nav";
-import Speeddial from "./components/utili/Speaddial";
+import Last from "../src/screens/Last";
+import CookiesBar from "./components/utili/CookiesBar";
 
 
-function App() {
+export default function App() {
   return (
     <>
-    <Nav/>
     <Router>
       <Route path="/" exact component={Home} />
+      <Route path="/help" exact component={Last} />
       <Route path="/mssg" exact component={Message} />
       <Route path="/chat" exact component={Chat} />
       <Route path="/nav" exact component={Nav} />
@@ -30,9 +31,6 @@ function App() {
       <Route path="/sign-up/" exact component={SignUp} />
       <Route path="/Timeline/" exact component={Timeline} />
     </Router>
+    <CookiesBar/>
     </>
-  );
-}
-
-export default App;
-
+    )};

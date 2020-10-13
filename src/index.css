@@ -6,10 +6,12 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-
+*{
+  font-family: 	'Segoe UI Web Regular', 'Segoe UI', 'Segoe WP', Tahoma, Arial, sans-serif !important;
+}
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
+    monospace !important;
 }
 
 article > div {
@@ -22,7 +24,9 @@ body, html{
   overflow: hidden !important;
 }
 
-
+button.MuiSpeedDial-fab , .MuiAlert-filledInfo {
+  background-color:#1fb2cc !important;
+}
 @media only screen and (max-width: 600px) {
   .scroll-area {
     top: 120px !important;

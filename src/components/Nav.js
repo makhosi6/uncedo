@@ -6,7 +6,7 @@ export default function Nav() {
     <nav style={{
       backgroundColor: "rgba(31, 178, 204, 1)"
     }} >
-      <Header 
+      <Header
         button="Settings"
       ></Header>{" "}
     </nav>

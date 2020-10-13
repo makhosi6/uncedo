@@ -1,5 +1,5 @@
-import React, { Component } from "react";
-import styled, { css } from "styled-components";
+import React from "react";
+import styled from "styled-components";
 import { Link } from "react-router-dom";
 import MaterialCommunityIconsIcon from "react-native-vector-icons/dist/MaterialCommunityIcons";
 import IoniconsIcon from "react-native-vector-icons/dist/Ionicons";
@@ -9,7 +9,7 @@ import EntypoIcon from "react-native-vector-icons/dist/Entypo";
 function Footer(props) {
   return (
     <Container {...props}>
-      <Link to="/Home">
+      <Link to="/">
         <Button3>
           <ButtonOverlay>
             <MaterialCommunityIconsIcon

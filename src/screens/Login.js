@@ -2,6 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import EvilIconsIcon from "react-native-vector-icons/dist/EvilIcons";
 import { Link } from "react-router-dom";
+import { ContactIcon, LockIcon, MailIcon } from "@fluentui/react-icons";
 
 function Login(props) {
   return (
@@ -20,30 +21,28 @@ function Login(props) {
               <UsernameColumn>
                 <Invisible></Invisible>
                 <Username>
-                  <EvilIconsIcon
-                    name="user"
+                  <ContactIcon
                     style={{
                       color: "rgba(255,255,255,1)",
-                      fontSize: 30,
-                      marginLeft: 20,
+                      fontSize: 23,
+                      marginLeft: 15,
                       alignSelf: "center"
                     }}
-                  ></EvilIconsIcon>
+                  />
                   <UsernameInput
                     placeholder="Username"
                     secureTextEntry={false}
                   ></UsernameInput>
                 </Username>
                 <Password>
-                  <EvilIconsIcon
-                    name="lock"
+                  <LockIcon
                     style={{
                       color: "rgba(255,255,255,1)",
-                      fontSize: 33,
-                      marginLeft: 20,
+                      fontSize: 23,
+                      marginLeft: 15,
                       alignSelf: "center"
                     }}
-                  ></EvilIconsIcon>
+                  ></LockIcon>
                   <PasswordInput
                     placeholder="Password"
                     type="password" 
@@ -63,7 +62,7 @@ function Login(props) {
           </LogoColumn>
           <LogoColumnFiller></LogoColumnFiller>
           <FooterTexts>
-            <Link to="/SignUp">
+            <Link to="/sign-up">
               <Button2>
                 <ButtonOverlay>
                   <CreateAccountFiller></CreateAccountFiller>

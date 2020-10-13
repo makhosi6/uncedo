@@ -34,7 +34,7 @@ export default function OptBtn() {
 
   return (
     <div>
-      <ListIcon style={{ color: "white", marginTop: "15px", fontSize: "28px" }}aria-controls="simple-menu" aria-haspopup="true" onClick={handleClick}/>
+      <ListIcon style={{ color: "white", marginTop: "15px", fontSize: "28px" , cursor: "pointer"}} aria-controls="simple-menu" aria-haspopup="true" onClick={handleClick}/>
       <Menu
         id="simple-menu"
         anchorEl={anchorEl}

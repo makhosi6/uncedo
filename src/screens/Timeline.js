@@ -1,9 +1,12 @@
 import React from "react";
 import styled from "styled-components";
 import Article from "../components/Article";
+import Nav from "../components/Nav";
 
 function Timeline(props) {
   return (
+    <>
+   <Nav/>
     <Root>
       <Body>
         <Headline>
@@ -36,6 +39,7 @@ function Timeline(props) {
         </ScrollArea>
       </Body>
     </Root>
+    </>
   );
 }
 

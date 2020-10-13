@@ -4,17 +4,19 @@ import EvilIconsIcon from "react-native-vector-icons/dist/EvilIcons";
 import FontAwesomeIcon from "react-native-vector-icons/dist/FontAwesome";
 import IoniconsIcon from "react-native-vector-icons/dist/Ionicons";
 import GoogleMapReact from "google-map-react";
-
+import Nav from "../components/Nav";
 function Feedback(props) {
   return (
+    <>
+    <Nav/>
     <Root>
       <Body>
         <Background>
           <Rect7>
             <FeedbackBox>
               <Text4Column>
-                <Text4>FEEDBACK</Text4>
-                <Text42>Your feedback is very important to us.</Text42>
+                <Text4>SOS</Text4>
+                <Text42>Sed ut perspiciatis unde omnis iste natus. </Text42>
                 <Form>
                   <Name>
                     <EvilIconsIcon
@@ -26,7 +28,7 @@ function Feedback(props) {
                         alignSelf: "center"
                       }}
                     ></EvilIconsIcon>
-                    <TextInput2 type="text" placeholder="Stan Smith"></TextInput2>
+                    <TextInput2 type="text" placeholder="Jane Smith"></TextInput2>
                   </Name>
                   <NameFiller></NameFiller>
                   <Email>
@@ -78,8 +80,9 @@ function Feedback(props) {
         </Map>
       </Body>
     </Root>
+    </>
   );
-}
+};
 
 const Root = styled.div`
   display: flex;

@@ -30,9 +30,9 @@ export default function CookieBar() {
   };
   return (
     <div   className={classes.root}>
-      <Snackbar open={open} autoHideDuration={17000} onClose={handleClose}>
+      <Snackbar open={open} autoHideDuration={170000} onClose={handleClose}>
         <Alert id="cookie-bar" onClose={handleClose} severity="info">
-        Note: This website uses cookies and this website uses cookies.
+        Note: This website uses cookies.
         </Alert>
       </Snackbar>
     </div>

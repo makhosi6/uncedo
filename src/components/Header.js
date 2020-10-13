@@ -1,8 +1,10 @@
 import React from "react";
 import styled from "styled-components";
 import SettingsOptions  from "./utili/OptBtn";
-import Menu from "./Menu";
+import Menu from "./Drawer";
 import Speeddial from "./utili/Speaddial";
+import { Link } from "@material-ui/core";
+import { ContactIcon } from "@fluentui/react-icons";
 // import { Link } from "react-router-dom";
 
 function HeaderX(props) {
@@ -15,6 +17,7 @@ function HeaderX(props) {
               <Menu/>
           </IconRow>
         </IconRow>
+        
         <IconRowFiller></IconRowFiller>
         <div
           style={{
@@ -29,18 +32,22 @@ function HeaderX(props) {
               color: "whitesmoke"
             }}
           >
-            <h5>LOGO</h5>
+                <Link href="/">
+                  <h5>
+                    LOGO
+                    </h5>
+                </Link>
           </div>
         </div>
         <IconRowFiller></IconRowFiller>
-        {/* <Link to="/Settings"> */}
+      
           <Button>
             <ButtonOverlay /* Conditional navigation not supported at the moment */
             >
               <SettingsOptions />
             </ButtonOverlay>
           </Button>
-        {/* </Link> */}
+     
       </Group>
       <Speeddial/>
     </Container>
@@ -48,8 +55,7 @@ function HeaderX(props) {
 }
 
 const Container = styled.div`
-  max-width: 1000px;
-  margin: auto;
+padding: 0 10px;
   display: flex;
   flex-direction: column;
 `;
@@ -70,7 +76,6 @@ const Group = styled.div`
 const IconRow = styled.div`
   height: 44px;
   flex-direction: row;
-  margin-left: 10px;
  
   display: flex;
 `;
@@ -86,8 +91,15 @@ const Button = styled.div`
   height: 25px;
   flex-direction: column;
   display: flex;
-  margin-right: 15px;
-  margin-top: 15px;
+  margin: 15px 30px;
+  border: none;
+`;
+const Button23 = styled.div`
+  width: 25px;
+  height: 25px;
+  flex-direction: column;
+  display: flex;
+  margin: 15px 10% 15px 0;
   border: none;
 `;
 

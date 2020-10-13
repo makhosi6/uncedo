@@ -1,23 +1,14 @@
 import React from "react";
 import styled from "styled-components";
+import Nav from "../components/Nav";
 
 function Channels(props) {
   return (
+    <>
+<Nav/>
     <Root>
       <Body>
-        {/* <Tabs>
-          <Following>
-            <ButtonOverlay>
-              <Text >SOS </Text>
-            </ButtonOverlay>
-          </Following>
-          <Following>
-            <ButtonOverlay>
-              <Text >Chat </Text>
-            </ButtonOverlay>
-          </Following>
-        </Tabs> */}
-<ScrollArea>
+      <ScrollArea>
         <Categories>
           <Button2Row>
             <Button2>
@@ -123,6 +114,7 @@ function Channels(props) {
         </ScrollArea>
       </Body>
     </Root>
+    </>
   );
 }
 
@@ -158,41 +150,6 @@ const ScrollArea = styled.div`
   right: 0px;
   bottom: 0px;
 
-`;
-
-const Tabs = styled.div`
-  height: 80px;
-  background-color: rgba(31,178,204,1);
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-around;
-  elevation: 0px;
-  shadow-radius: 0px;
-  align-self: stretch;
-  display: flex;
-  box-shadow: 0px 0px 0px  0px rgba(0,0,0,1) ;
-`;
-
-const Following = styled.div`
-  width: 100px;
-  height: 38px;
-  background-color: rgba(247,247,247,0);
-  align-self: center;
-  border-radius: 5px;
-  border-color: rgba(255,255,255,1);
-  border-width: 1px;
-  flex-direction: column;
-  display: flex;
-  justify-content: center;
-  margin: 0 auto 0 20px;
-  border-style: solid;
-`;
-
-const Text = styled.span`
-  font-family: Arial;
-  color: rgba(255,255,255,1);
-  align-self: center;
-  font-weight: bold;
 `;
 
 const Categories = styled.div`

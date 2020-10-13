@@ -2,7 +2,7 @@ import React from 'react';
 import Menu from '@material-ui/core/Menu';
 import MenuItem from '@material-ui/core/MenuItem';
 import Dialog from '../Modal';
-import { SettingsIcon } from "@fluentui/react-icons";
+import { MoreVerticalIcon, SettingsIcon } from "@fluentui/react-icons";
 
 export default function OptBtn() {
   const [anchorEl, setAnchorEl] = React.useState(null);
@@ -34,7 +34,7 @@ export default function OptBtn() {
 
   return (
     <div>
-      <SettingsIcon style={{ color: "white", fontSize: "25px" }} aria-controls="simple-menu" aria-haspopup="true" onClick={handleClick}/>
+      <SettingsIcon style={{ color: "white", fontSize: "25px", cursor:"pointer" }} aria-controls="simple-menu" aria-haspopup="true" onClick={handleClick}/>
       <Menu
         id="simple-menu"
         anchorEl={anchorEl}

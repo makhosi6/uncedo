@@ -1,6 +1,6 @@
 import React from 'react';
 import { makeStyles } from '@material-ui/core/styles';
-
+import { ContactIcon } from "@fluentui/react-icons";
 import {SpeedDial , SpeedDialAction, SpeedDialIcon} from '@material-ui/lab';
 
 // import SpeedDial from '@material-ui/lab/SpeedDial';
@@ -42,15 +42,16 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 const actions = [
+  { icon: <ContactIcon style={{fontSize:"25px", fontWeight: "bolder"}}/>, name: 'Sign In' },
   { icon: <ChatIcon style={{fontSize:"25px", fontWeight: "bolder"}}/>, name: 'Chat' },
   { icon: <ShieldAlertIcon style={{fontSize:"25px", fontWeight: "bolder"}} />, name: 'Alert/SOS' }
 ];
 
 export default function SpeedDials() {
   const classes = useStyles();
-  const [direction, setDirection] = React.useState('up');
+  const [direction] = React.useState('up');
   const [open, setOpen] = React.useState(false);
-  const [hidden, setHidden] = React.useState(false);
+  const [hidden ] = React.useState(false);
 
 
   const handleClose = () => {
@@ -63,13 +64,12 @@ export default function SpeedDials() {
 
   return (
     <div className={classes.root}>
-  
       <div className={classes.exampleWrapper}>
         <SpeedDial 
           ariaLabel="SpeedDial example"
           className={classes.speedDial}
           hidden={hidden}
-          icon={<SpeedDialIcon  style={{backgroundColor:'#1fb2cc'}}  />}
+          icon={<SpeedDialIcon/>}
           onClose={handleClose}
           onOpen={handleOpen}
           open={open}
@@ -77,7 +77,6 @@ export default function SpeedDials() {
         >
           {actions.map((action) => (
             <SpeedDialAction
-            style={{backgroundColor:'#1fb2cc'}} 
               key={action.name}
               icon={action.icon}
               tooltipTitle={action.name}

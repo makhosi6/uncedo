@@ -1,9 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import IoniconsIcon from "react-native-vector-icons/dist/Ionicons";
-import EntypoIcon from "react-native-vector-icons/dist/Entypo";
-import FontAwesomeIcon from "react-native-vector-icons/dist/FontAwesome";
-import EvilIconsIcon from "react-native-vector-icons/dist/EvilIcons";
+import { ContactIcon, LockIcon, MailIcon } from "@fluentui/react-icons";
 import { Link } from "react-router-dom";
 
 function SignUp(props) {
@@ -13,8 +10,8 @@ function SignUp(props) {
         <Rect2>
           <ProgressBarColumn>
             <ProgressBar>
+                {/* <IoniconsIcon
               <Icon2Row>
-                <IoniconsIcon
                   name="md-checkmark-circle"
                   style={{
                     color: "rgba(30,174,199,1)",
@@ -47,38 +44,34 @@ function SignUp(props) {
                   height: 40,
                   opacity: 0.75
                 }}
-              ></FontAwesomeIcon>
+              ></FontAwesomeIcon> */}
             </ProgressBar>
             <Text3>CREATE ACCOUNT</Text3>
             <Form>
               <NameColumn>
                 <Name>
-                  <EvilIconsIcon
-                    name="user"
+                  <ContactIcon
                     style={{
                       color: "rgba(255,255,255,1)",
-                      fontSize: 33,
-                      width: 33,
-                      height: 33,
+                      fontSize: 23,
                       marginLeft: 15,
                       alignSelf: "center"
                     }}
-                  ></EvilIconsIcon>
+                  />
                   <NameInput
                     placeholder="Name"
                     secureTextEntry={false}
                   ></NameInput>
                 </Name>
                 <Email>
-                  <EvilIconsIcon
-                    name="envelope"
+                  <MailIcon
                     style={{
                       color: "rgba(255,255,255,1)",
-                      fontSize: 33,
+                      fontSize: 23,
                       marginLeft: 15,
                       alignSelf: "center"
                     }}
-                  ></EvilIconsIcon>
+                />
                   <EmailInput
                     placeholder="Email"
                     secureTextEntry={false}
@@ -88,15 +81,14 @@ function SignUp(props) {
               <NameColumnFiller></NameColumnFiller>
               <Invisible></Invisible>
               <Password>
-                <EvilIconsIcon
-                  name="lock"
+                <LockIcon
                   style={{
                     color: "rgba(255,255,255,1)",
-                    fontSize: 33,
+                    fontSize: 23,
                     marginLeft: 15,
                     marginTop: 13
                   }}
-                ></EvilIconsIcon>
+                />
                 <PasswordInput type="password" placeholder="Password"></PasswordInput>
               </Password>
             </Form>
@@ -110,8 +102,29 @@ function SignUp(props) {
               </Button>
             </Link>
             <Invisible/>
-            <Text4>Terms &amp; Conditions</Text4>
+           
           </ButtonColumn>
+          <LogoColumnFiller></LogoColumnFiller>
+          <FooterTexts>
+            <Link to="/login">
+              <Button2>
+                <ButtonOverlay>
+                  <CreateAccountFiller></CreateAccountFiller>
+                  <CreateAccount>Log In</CreateAccount>
+                </ButtonOverlay>
+              </Button2>
+            </Link>
+            
+            <Button2Filler></Button2Filler>
+            <Link to="/t&Cs">
+              <Button2>
+                <ButtonOverlay>
+                  <CreateAccountFiller></CreateAccountFiller>
+                  <CreateAccount>Terms &amp; Conditions</CreateAccount>
+                </ButtonOverlay>
+              </Button2>
+            </Link>
+          </FooterTexts>
         </Rect2>
       </Background>
     </Root>
@@ -156,7 +169,6 @@ const Rect2 = styled.div`
 `;
 
 const ProgressBar = styled.div`
-border: 1px solid black;
   height: 40px;
   flex-direction: row;
   display: flex;
@@ -330,6 +342,55 @@ margin: 70px auto;
 max-width: 600px;
   flex-direction: column;
   margin-bottom: 31px;
+  display: flex;
+`;
+
+const FooterTexts = styled.div`
+  height: 14px;
+  flex-direction: row;
+  display: flex;
+  margin-bottom: 36px;
+  margin-left: 37px;
+  margin-right: 36px;
+`;
+
+const Button2 = styled.div`
+
+  height: 14px;
+  flex-direction: column;
+  display: flex;
+  align-self: flex-end;
+  border: none;
+`;
+
+const CreateAccountFiller = styled.div`
+  flex: 1 1 0%;
+  flex-direction: column;
+  display: flex;
+`;
+
+const CreateAccount = styled.span`
+  font-family: Arial;
+  color: rgba(255,255,255,0.5);
+`;
+
+const Button2Filler = styled.div`
+  flex: 1 1 0%;
+  flex-direction: row;
+  display: flex;
+`;
+
+const NeedHelp = styled.span`
+  text-decoration: none;
+  font-family: Arial;
+  color: rgba(255,255,255,0.5);
+  align-self: flex-end;
+  margin-right: -1px;
+`;
+
+const LogoColumnFiller = styled.div`
+  flex: 1 1 0%;
+  flex-direction: column;
   display: flex;
 `;
 

@@ -1,73 +1,86 @@
 import React from "react";
 import styled, { css } from "styled-components";
-import MaterialCommunityIconsIcon from "react-native-vector-icons/dist/MaterialCommunityIcons";
-import Strip from "../components/Strip";
-import Footer from "../components/Footer";
+import { Switch, Route } from "react-router-dom";
+import { Mssg, Bar, Not } from "../components/Bar";
+import Nav from "../components/Nav";
 
 function Notifications(props) {
   const scrllArea = React.useRef();
 
   return (
+    <>
+    <Nav/>
     <Container>
       <TabSection>
-        <NotifsTab>
+        <NotifsTab
+          style={mssgs}
+          onClick={(e) => {
+            window.location.pathname = "/chat/messages";
+          }}
+        >
           <Center>
-            <Text>Notifications</Text>
+              <Text>Messages</Text>
           </Center>
         </NotifsTab>
-        <MessagesTab>
+        <MessagesTab
+          onClick={(e) => {
+            window.location.pathname = "/chat/contacts";
+          }}
+          style={contacts}
+        >
           <Center>
-            <Text2>Messages</Text2>
+            <Text2> Contacts</Text2>
           </Center>
         </MessagesTab>
-        <ModMailTab>
+        <ModMailTab
+          style={notifications}
+          onClick={(e) => {
+            window.location.pathname = "/chat/notifications";
+          }}
+        >
           <Center vertical>
-            <Text3>Mod mail</Text3>
+            <Text3> Notifications</Text3>
           </Center>
         </ModMailTab>
       </TabSection>
       <Header>
         <Center vertical>
-          <Image src={require("../assets/images/actor-adult-black-and-white-1040880.jpg")}></Image>
+          <Image
+            src={require("../assets/images/actor-adult-black-and-white-1040880.jpg")}
+          ></Image>
         </Center>
         <Center vertical>
           <Text4>Inbox</Text4>
         </Center>
-        <Center vertical>
-          {/* <MaterialCommunityIconsIcon
-            name="dots-vertical"
-            style={{
-              color: "rgba(255,255,255,1)",
-              fontSize: 24,
-              left: 315,
-              position: "absolute"
-            }}
-          ></MaterialCommunityIconsIcon> */}
-        </Center>
+        <Center vertical></Center>
       </Header>
-      <ScrollArea className="scroll-area" ref={scrllArea} onScroll={(e) => {
-
-      } }>
-      <Strip/>
-      <Strip/>
-      <Strip/>
-      <Strip/>
-      <Strip/>
-      <Strip/>
-      <Strip/>
-      <Strip/>
-      <Strip/>
-      <Strip/>
-      <Strip/>
-      <Strip/>
-      <Strip/>
-      <Strip/>
-      <Strip/>
+      <ScrollArea
+        className="scroll-area"
+        ref={scrllArea}
+        onScroll={(e) => {}}
+        onClick={(e) => {
+          console.trace("TO-DO HERE");
+        }}
+      >
+        <Switch>
+          <Route exact path="/chat/messages" component={Mssg} />
+          <Route exact path="/chat/contacts" component={Bar} />
+          <Route exact path="/chat/notifications" component={Not} />
+        </Switch>
       </ScrollArea>
     </Container>
+    </>
   );
 }
-
+const styles = {
+  borderColor: "#1fb2cc",
+  borderBottomWidth: "4px",
+  borderBottomStyle: "solid",
+};
+const notifications =
+  window.location.pathname === "/chat/notifications" ? styles : null;
+const mssgs = window.location.pathname === "/chat/messages" ? styles : null;
+const contacts = window.location.pathname === "/chat/contacts" ? styles : null;
 
 const Container = styled.div`
   background-color: #fff;
@@ -81,7 +94,7 @@ const Container = styled.div`
 const TabSection = styled.div`
   top: 6.36%;
   left: 0px;
-  height: 58px;
+  height: 61px;
   position: absolute;
   flex-direction: row;
   right: 0px;
@@ -95,16 +108,14 @@ const TabSection = styled.div`
 
 const NotifsTab = styled.div`
   width: 127px;
-  height: 51px;
+  height: 59px;
   align-self: center;
   margin-right: 0px;
   margin-left: 0px;
-  border-color: #1fb2cc;
   border-width: 0px;
-  border-bottom-width: 8px;
-  border-style: solid;
   position: relative;
   display: flex;
+  cursor: pointer !important;
 `;
 
 const Center = styled.div`
@@ -117,21 +128,20 @@ const Center = styled.div`
   position: absolute;
   pointer-events: none;
 
-  ${props =>
+  ${(props) =>
     ((props.horizontal && !props.vertical) ||
       (!props.horizontal && !props.vertical)) &&
     css`
       align-items: center;
-  `};
+    `};
 
-
-  ${props =>
+  ${(props) =>
     ((props.vertical && !props.horizontal) ||
       (!props.horizontal && !props.vertical)) &&
     css`
       justify-content: center;
-  `};
-  `;
+    `};
+`;
 
 const Text = styled.span`
   font-family: IBM Plex Sans;
@@ -150,6 +160,7 @@ const MessagesTab = styled.div`
   margin-left: 0px;
   position: relative;
   display: flex;
+  cursor: pointer !important;
 `;
 
 const Text2 = styled.span`
@@ -169,6 +180,7 @@ const ModMailTab = styled.div`
   margin-left: 0px;
   position: relative;
   display: flex;
+  cursor: pointer !important;
 `;
 
 const Text3 = styled.span`
@@ -222,6 +234,5 @@ const ScrollArea = styled.div`
   justify-content: flex-start;
   display: flex;
 `;
-
 
 export default Notifications;

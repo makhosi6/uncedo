@@ -5,7 +5,7 @@ import Divider from "../components/Divider";
 import MssgBubble from "../components/MssgBubble";
 // #comment CommentsWrapper
 import SimpleLineIconsIcon from "react-native-vector-icons/dist/SimpleLineIcons";
-
+import Nav from "../components/Nav";
 import Strip from "../components/Strip";
 import Footer from "../components/Footer";
 
@@ -13,6 +13,8 @@ function Notifications(props) {
   const scrllArea = React.useRef();
 
   return (
+    <>
+<Nav/>
     <Container>
       <TabSection>
         <NotifsTab>
@@ -82,6 +84,7 @@ function Notifications(props) {
       ></Footer>
       
     </Container>
+    </>
   );
 }
 
