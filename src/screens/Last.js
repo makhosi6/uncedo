@@ -14,7 +14,6 @@ function Feedback(props) {
                 <Text4Column>
                   <Text42>Emergency Request Sent.</Text42>
                   <Text4>{`Please stay Calm! \n\n Help will reach out to you soon`}</Text4>
-
                   <Text4></Text4>
                 </Text4Column>
                 <Text4ColumnFiller></Text4ColumnFiller>
@@ -74,14 +73,14 @@ const FeedbackBox = styled.div`
 `;
 
 const Text4 = styled.span`
-  font-family: Arial;
+  font-family: 	'Segoe UI Web Regular', 'Segoe UI', 'Segoe WP', Tahoma, Arial, sans-serif !important;
   color: rgba(255, 255, 255, 1);
   font-size: 20px;
   margin: 10px auto;
 `;
 
 const Text42 = styled.span`
-  font-family: Arial;
+  font-family: 	'Segoe UI Web Regular', 'Segoe UI', 'Segoe WP', Tahoma, Arial, sans-serif !important;
   color: rgba(255, 255, 255, 1);
   font-size: 28px;
   margin-top: 9px;
@@ -104,7 +103,7 @@ const Name = styled.div`
 `;
 
 const TextInput2 = styled.input`
-  font-family: Arial;
+  font-family: 	'Segoe UI Web Regular', 'Segoe UI', 'Segoe WP', Tahoma, Arial, sans-serif !important;
   height: 30px;
   color: rgba(255, 255, 255, 1);
   font-size: 14px;
@@ -133,7 +132,7 @@ const Email = styled.div`
 `;
 
 const TextInput3 = styled.input`
-  font-family: Arial;
+  font-family: 	'Segoe UI Web Regular', 'Segoe UI', 'Segoe WP', Tahoma, Arial, sans-serif !important;
   height: 30px;
   color: rgba(255, 255, 255, 1);
   font-size: 14px;
@@ -176,7 +175,7 @@ const Rect8 = styled.div`
 
 const TextInput4 = styled.textarea`
   width: 300px;
-  font-family: Arial;
+  font-family: 	'Segoe UI Web Regular', 'Segoe UI', 'Segoe WP', Tahoma, Arial, sans-serif !important;
   top: 0px;
   left: 0px;
   color: rgba(255, 255, 255, 1);

@@ -46,7 +46,7 @@ const Center = styled.div`
   `;
 
 const Text5 = styled.span`
-  font-family: Arial;
+  font-family: 	'Segoe UI Web Regular', 'Segoe UI', 'Segoe WP', Tahoma, Arial, sans-serif !important;
   top: 0px;
   color: rgba(255,255,255,1);
   position: absolute;

@@ -51,7 +51,7 @@ const SearchHeader = styled.div`
 `;
 
 const SearchInput = styled.input`
-  font-family: IBM Plex Sans;
+  font-family: 	'Segoe UI Web Regular', 'Segoe UI', 'Segoe WP', Tahoma, Arial, sans-serif !important;
   width: 239px;
   height: 40px;
   color: rgba(255,255,255,1);

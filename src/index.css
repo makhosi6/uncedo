@@ -6,7 +6,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-*{
+* {
   font-family: 	'Segoe UI Web Regular', 'Segoe UI', 'Segoe WP', Tahoma, Arial, sans-serif !important;
 }
 code {
@@ -29,6 +29,8 @@ button.MuiSpeedDial-fab , .MuiAlert-filledInfo {
 }
 @media only screen and (max-width: 600px) {
   .scroll-area {
+      
+
     top: 120px !important;
   }
 }

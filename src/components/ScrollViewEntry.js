@@ -40,7 +40,7 @@ const Container = styled.div`
 `;
 
 const Text2 = styled.p`
-  font-family: Arial;
+  font-family: 	'Segoe UI Web Regular', 'Segoe UI', 'Segoe WP', Tahoma, Arial, sans-serif !important;
   top: 0px;
   left: 0px;
   width: 620px;
@@ -62,7 +62,7 @@ const Rect2 = styled.div`
 `;
 
 const Text3 = styled.span`
-  font-family: Arial;
+  font-family: 	'Segoe UI Web Regular', 'Segoe UI', 'Segoe WP', Tahoma, Arial, sans-serif !important;
   color: #121212;
   font-size: 14px;
   margin-left: 16px;
@@ -70,7 +70,7 @@ const Text3 = styled.span`
 `;
 
 const Text4 = styled.span`
-  font-family: Arial;
+  font-family: 	'Segoe UI Web Regular', 'Segoe UI', 'Segoe WP', Tahoma, Arial, sans-serif !important;
   color: #121212;
   font-size: 14px;
   margin-left: 17px;

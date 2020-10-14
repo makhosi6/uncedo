@@ -42,8 +42,12 @@ export default function OptBtn() {
         open={Boolean(anchorEl)}
         onClose={handleClose}
       >
-        <MenuItem onClick={handleClose}>Profile</MenuItem>
-        <MenuItem onClick={handleClose}>My account</MenuItem>
+        <MenuItem /*onClick={handleClose}*/   onClick={(e) => {
+              window.location.pathname = "/login";
+            }}>Profile</MenuItem>
+        <MenuItem /*onClick={handleClose}*/  onClick={(e) => {
+              window.location.pathname = "/login";
+            }}>My account</MenuItem>
         <MenuItem onClick={handleClose}>Report a bug</MenuItem>
         <MenuItem onClick={handleClickOpen('paper')}>About this App</MenuItem>
         <Dialog

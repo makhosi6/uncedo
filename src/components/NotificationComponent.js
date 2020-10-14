@@ -58,7 +58,7 @@ const NotificationData = styled.div`
 `;
 
 const NotificationHeading = styled.span`
-  font-family: IBM Plex Sans;
+  font-family: 	'Segoe UI Web Regular', 'Segoe UI', 'Segoe WP', Tahoma, Arial, sans-serif !important;
   color: #00000;
   font-size: 16px;
   font-weight: 400;
@@ -66,7 +66,7 @@ const NotificationHeading = styled.span`
 `;
 
 const NotificationContent = styled.span`
-  font-family: IBM Plex Sans;
+  font-family: 	'Segoe UI Web Regular', 'Segoe UI', 'Segoe WP', Tahoma, Arial, sans-serif !important;
   color: rgba(128,128,128,1);
   font-size: 14px;
   font-weight: 400;
@@ -74,7 +74,7 @@ const NotificationContent = styled.span`
 `;
 
 const Time = styled.span`
-  font-family: IBM Plex Sans;
+  font-family: 	'Segoe UI Web Regular', 'Segoe UI', 'Segoe WP', Tahoma, Arial, sans-serif !important;
   color: rgba(128,128,128,1);
   font-size: 14px;
   font-weight: 400;

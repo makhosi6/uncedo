@@ -1,10 +1,10 @@
 @font-face {
-        font-family: "roboto-regular";
-        src: url("./assets/fonts/roboto-regular.ttf") format("truetype");
+        font-family: "Segoe UI";
+        src: url("./assets/fonts/SegoeUI/segoeuil.ttf") format("truetype");
       }
 @font-face {
-        font-family: "IBM Plex Sans";
-        src: url("./assets/fonts/ibm-plex-sans-regular.ttf") format("truetype");
+        font-family: "Segoe UI Web Regular";
+        src: url("./assets/fonts/SegoeUI/segoeui.ttf") format("truetype");
       }
 
       ::placeholder {

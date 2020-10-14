@@ -144,7 +144,7 @@ const Center = styled.div`
 `;
 
 const Text = styled.span`
-  font-family: IBM Plex Sans;
+  font-family: 	'Segoe UI Web Regular', 'Segoe UI', 'Segoe WP', Tahoma, Arial, sans-serif !important;
   color: #00000;
   position: absolute;
   font-size: 14px;
@@ -164,7 +164,7 @@ const MessagesTab = styled.div`
 `;
 
 const Text2 = styled.span`
-  font-family: IBM Plex Sans;
+  font-family: 	'Segoe UI Web Regular', 'Segoe UI', 'Segoe WP', Tahoma, Arial, sans-serif !important;
   color: #00000;
   position: absolute;
   font-size: 14px;
@@ -184,7 +184,7 @@ const ModMailTab = styled.div`
 `;
 
 const Text3 = styled.span`
-  font-family: IBM Plex Sans;
+  font-family: 	'Segoe UI Web Regular', 'Segoe UI', 'Segoe WP', Tahoma, Arial, sans-serif !important;
   left: 10.81%;
   color: #00000;
   position: absolute;
@@ -212,7 +212,7 @@ const Image = styled.img`
 `;
 
 const Text4 = styled.span`
-  font-family: IBM Plex Sans;
+  font-family: 	'Segoe UI Web Regular', 'Segoe UI', 'Segoe WP', Tahoma, Arial, sans-serif !important;
   left: 72px;
   color: #00000;
   position: absolute;

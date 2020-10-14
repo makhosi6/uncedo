@@ -3,7 +3,7 @@ import React from 'react';
 export function Mssg() {
     return (
         <div>
-           <p>Message</p>
+           <p>Messages</p>
         </div>
     )
 }

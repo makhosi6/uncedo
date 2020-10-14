@@ -4,6 +4,8 @@ import SettingsOptions  from "./utili/OptBtn";
 import Menu from "./Drawer";
 import Speeddial from "./utili/Speaddial";
 import { Link } from "@material-ui/core";
+import Select from "./utili/Select";
+import logo from "../assets/images/uncedo-logo.svg"
 import { ContactIcon } from "@fluentui/react-icons";
 // import { Link } from "react-router-dom";
 
@@ -21,6 +23,7 @@ function HeaderX(props) {
         <IconRowFiller></IconRowFiller>
         <div
           style={{
+            margin:"auto",
             width: "100%",
             justifyContent: "space-around",
           }}
@@ -33,14 +36,12 @@ function HeaderX(props) {
             }}
           >
                 <Link href="/">
-                  <h5>
-                    LOGO
-                    </h5>
+                <img alt="Hands & Heart logo" src={logo} style={{width: "50px", height: "40px", objectFit: "contain", objectPosition: "center center"}}/>
                 </Link>
           </div>
         </div>
         <IconRowFiller></IconRowFiller>
-      
+      <Select/>
           <Button>
             <ButtonOverlay /* Conditional navigation not supported at the moment */
             >

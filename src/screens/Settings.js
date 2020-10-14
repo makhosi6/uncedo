@@ -168,7 +168,7 @@ const AccountSettings = styled.div`
 `;
 
 const Expanded = styled.span`
-  font-family: Arial;
+  font-family: 	'Segoe UI Web Regular', 'Segoe UI', 'Segoe WP', Tahoma, Arial, sans-serif !important;
   color: #121212;
   font-size: 18px;
   font-weight: 700;
@@ -189,7 +189,7 @@ const EditProfile = styled.div`
 `;
 
 const Text10 = styled.span`
-  font-family: Arial;
+  font-family: 	'Segoe UI Web Regular', 'Segoe UI', 'Segoe WP', Tahoma, Arial, sans-serif !important;
   color: rgba(0,0,0,1);
   font-size: 16px;
   margin-top: 6px;
@@ -209,7 +209,7 @@ const ChangeConnections = styled.div`
 `;
 
 const Text11 = styled.span`
-  font-family: Arial;
+  font-family: 	'Segoe UI Web Regular', 'Segoe UI', 'Segoe WP', Tahoma, Arial, sans-serif !important;
   color: rgba(0,0,0,1);
   font-size: 16px;
   margin-top: 6px;
@@ -243,7 +243,7 @@ const ProviderSettings = styled.div`
 `;
 
 const Text12 = styled.span`
-  font-family: Arial;
+  font-family: 	'Segoe UI Web Regular', 'Segoe UI', 'Segoe WP', Tahoma, Arial, sans-serif !important;
   color: rgba(0,0,0,1);
   font-size: 16px;
   margin-top: 6px;
@@ -272,7 +272,7 @@ const Notifications = styled.div`
 `;
 
 const Text7 = styled.span`
-  font-family: Arial;
+  font-family: 	'Segoe UI Web Regular', 'Segoe UI', 'Segoe WP', Tahoma, Arial, sans-serif !important;
   color: #121212;
   font-size: 18px;
   font-weight: 700;
@@ -297,7 +297,7 @@ const Backup = styled.div`
 `;
 
 const Text72 = styled.span`
-  font-family: Arial;
+  font-family: 	'Segoe UI Web Regular', 'Segoe UI', 'Segoe WP', Tahoma, Arial, sans-serif !important;
   color: #121212;
   font-size: 18px;
   font-weight: 700;
@@ -333,7 +333,7 @@ const Sponsored = styled.div`
 `;
 
 const Text73 = styled.span`
-  font-family: Arial;
+  font-family: 	'Segoe UI Web Regular', 'Segoe UI', 'Segoe WP', Tahoma, Arial, sans-serif !important;
   color: #121212;
   font-size: 18px;
   font-weight: 700;
@@ -350,7 +350,7 @@ const Switch4 = styled.div`
 `;
 
 const PageName = styled.span`
-  font-family: Arial;
+  font-family: 	'Segoe UI Web Regular', 'Segoe UI', 'Segoe WP', Tahoma, Arial, sans-serif !important;
   top: 0px;
   left: 85px;
   color: rgba(255,255,255,1);
@@ -377,7 +377,7 @@ const Avatar = styled.img`
 `;
 
 const UserEmail = styled.span`
-  font-family: Arial;
+  font-family: 	'Segoe UI Web Regular', 'Segoe UI', 'Segoe WP', Tahoma, Arial, sans-serif !important;
   top: 75px;
   left: 0px;
   color: rgba(0,0,0,1);
@@ -386,7 +386,7 @@ const UserEmail = styled.span`
 `;
 
 const UserName = styled.span`
-  font-family: Arial;
+  font-family: 	'Segoe UI Web Regular', 'Segoe UI', 'Segoe WP', Tahoma, Arial, sans-serif !important;
   top: 0px;
   left: 0px;
   color: #1fb2cc;

@@ -6,14 +6,14 @@ import 'react-chat-elements/dist/main.css';
 import Home from "./screens/Home";
 import Sos from "./screens/Sos";
 import Login from "./screens/Login";
-import Settings from "./screens/Settings";
 import SignUp from "./screens/SignUp";
 import Timeline from "./screens/Timeline";
-import Message from "./screens/Message";
 import Chat from "./screens/Chat";
 import Nav from "../src/components/Nav";
 import Last from "../src/screens/Last";
 import CookiesBar from "./components/utili/CookiesBar";
+// import Message from "./screens/Message";
+// import Settings from "./screens/Settings";
 
 
 export default function App() {
@@ -22,14 +22,16 @@ export default function App() {
     <Router>
       <Route path="/" exact component={Home} />
       <Route path="/help" exact component={Last} />
-      <Route path="/mssg" exact component={Message} />
-      <Route path="/chat" exact component={Chat} />
-      <Route path="/nav" exact component={Nav} />
+      <Route path="/chat/contacts" exact component={Chat} />
+      <Route path="/chat/notifications" exact component={Chat} />
+      <Route path="/chat/messages" exact component={Chat} />
+      <Route path="/article/title-here-636348" exact component={Nav} />
       <Route path="/emergency/sos" exact component={Sos} />
       <Route path="/login/" exact component={Login} />
-      <Route path="/settings/" exact component={Settings} />
       <Route path="/sign-up/" exact component={SignUp} />
-      <Route path="/Timeline/" exact component={Timeline} />
+      <Route path="/topic" exact component={Timeline} />
+      {/* <Route path="/settings/" exact component={Settings} /> */}
+      {/* <Route path="/mssg" exact component={Message} /> */}
     </Router>
     <CookiesBar/>
     </>

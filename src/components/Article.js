@@ -83,16 +83,14 @@ export default function Article(prop) {
                         lineHeight="normal"
                         m={1}
                       >
-                        <Link color="inherit" href="https://google.com?q=taken">
-                          SpaceX goes to Mars: To setup establishment by 2040
+                        <Link color="inherit" href="/article/title-here-636348">
+                        Risks while isolating due to COVID-19
                         </Link>{" "}
                       </Box>{" "}
                     </Typography>{" "}
                     <Typography variant="body2">
                       <Box boxShadow={0} lineHeight="normal" m={1}>
-                        The SpaceX plan for building a Mars settlement includes
-                        refueling in orbit. revealed his grand plan for
-                        establishing a human settlement on Mars.
+                      Tips for coping with stress at home and actions to take if you or your family members are experiencing violence
                       </Box>{" "}
                     </Typography>{" "}
                   </Grid>{" "}
@@ -126,12 +124,12 @@ export default function Article(prop) {
                         <Text3>
                           <Link
                             color="inherit"
-                            href="https://google.com?q=taken"
+                            href="/article/title-here-636348"
                           >
                             <GlobeIcon 
                               style={{ marginBottom: "5px" , color: "#776f6f",marginRight: "5px"}} 
                             /> 
-                            SPACE.com
+                           un.org
                           </Link>
                         </Text3>
                       </Box>{" "}
@@ -166,14 +164,14 @@ export default function Article(prop) {
 }
 
 const Text3 = styled.span`
-  font-family: Arial;
+  font-family: 	'Segoe UI Web Regular', 'Segoe UI', 'Segoe WP', Tahoma, Arial, sans-serif !important;
   color: #000000;
   font-size: 14px;
   margin-top: 1px;
 `;
 
 const Text4 = styled.span`
-  font-family: Arial;
+  font-family: 	'Segoe UI Web Regular', 'Segoe UI', 'Segoe WP', Tahoma, Arial, sans-serif !important;
   color: #000000;
   font-size: 14px;
   margin-top: 3px;

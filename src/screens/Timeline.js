@@ -9,13 +9,14 @@ function Timeline(props) {
    <Nav/>
     <Root>
       <Body>
-        <Headline>
+        <Headline className="hero" >
           <Image>
             <Overlay>
-              <Following>
-                <Text>Following</Text>
-              </Following>
-              <Followers>777K Followers</Followers>
+            <Text4Column>
+                  <Text42>Gender and domestic abuse</Text42>
+                  <Text4></Text4>
+                </Text4Column>
+              <Followers></Followers>
             </Overlay>
           </Image>
         </Headline>
@@ -93,7 +94,7 @@ const Following = styled.div`
 `;
 
 const Text = styled.span`
-  font-family: Arial;
+  font-family: 	'Segoe UI Web Regular', 'Segoe UI', 'Segoe WP', Tahoma, Arial, sans-serif !important;
   color: rgba(31, 178, 204, 1);
   font-size: 14px;
   font-weight: bold;
@@ -101,7 +102,7 @@ const Text = styled.span`
 `;
 
 const Followers = styled.span`
-  font-family: Arial;
+  font-family: 	'Segoe UI Web Regular', 'Segoe UI', 'Segoe WP', Tahoma, Arial, sans-serif !important;
   color: rgba(255, 255, 255, 1);
   font-size: 16px;
   font-weight: bold;
@@ -121,5 +122,27 @@ const ScrollArea = styled.div`
   justify-content: flex-start;
   display: flex;
 `;
+const Text4Column = styled.div`
+  flex-direction: column;
+  margin-top: 39px;
+  margin-left: 40px;
+  margin-right: 40px;
+  display: flex;
+`;
 
+const Text4 = styled.span`
+  font-family: 	'Segoe UI Web Regular', 'Segoe UI', 'Segoe WP', Tahoma, Arial, sans-serif !important;
+  color: rgba(255, 255, 255, 1);
+  font-size: 20px;
+  margin: 10px auto;
+`;
+
+const Text42 = styled.span`
+  font-family: 	'Segoe UI Web Regular', 'Segoe UI', 'Segoe WP', Tahoma, Arial, sans-serif !important;
+  color: rgba(255, 255, 255, 1);
+  font-size: 28px;
+  margin-top: 9px;
+  text-align: center !important;
+  align-self: center;
+`;
 export default Timeline;

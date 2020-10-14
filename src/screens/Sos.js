@@ -66,7 +66,9 @@ function Feedback(props) {
           </Rect7>
         </Background>
         <Map>
-          <GoogleMapReact
+          <iframe title="8755vf65" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d6623.62629529462!2d18.5106174!3d-33.8944658!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x9f5bb7491ff8dca8!2sCanal%20Walk%20Shopping%20Centre!5e0!3m2!1sen!2sza!4v1602650797537!5m2!1sen!2sza" width="100%" height="100%" frameborder="0" 
+          style={{border:"0"}} allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+          {/* <GoogleMapReact
             bootstrapURLKeys={{ key: "YOUR_API_KEY" }}
             defaultZoom={4}
             provider="MapView.PROVIDER_GOOGLE"
@@ -76,7 +78,7 @@ function Feedback(props) {
               lng: 78.9629
             }}
             customMapStyle="Silver"
-          />
+          /> */}
         </Map>
       </Body>
     </Root>
@@ -119,7 +121,7 @@ const FeedbackBox = styled.div`
 `;
 
 const Text4 = styled.span`
-  font-family: Arial;
+  font-family: 	'Segoe UI Web Regular', 'Segoe UI', 'Segoe WP', Tahoma, Arial, sans-serif !important;
   color: rgba(255,255,255,1);
   font-size: 24px;
   font-weight: bold;
@@ -127,7 +129,7 @@ const Text4 = styled.span`
 `;
 
 const Text42 = styled.span`
-  font-family: Arial;
+  font-family: 	'Segoe UI Web Regular', 'Segoe UI', 'Segoe WP', Tahoma, Arial, sans-serif !important;
   color: rgba(255,255,255,1);
   font-size: 12px;
   margin-top: 9px;
@@ -150,7 +152,7 @@ const Name = styled.div`
 `;
 
 const TextInput2 = styled.input`
-  font-family: Arial;
+  font-family: 	'Segoe UI Web Regular', 'Segoe UI', 'Segoe WP', Tahoma, Arial, sans-serif !important;
   height: 30px;
   color: rgba(255,255,255,1);
   font-size: 14px;
@@ -179,7 +181,7 @@ const Email = styled.div`
 `;
 
 const TextInput3 = styled.input`
-  font-family: Arial;
+  font-family: 	'Segoe UI Web Regular', 'Segoe UI', 'Segoe WP', Tahoma, Arial, sans-serif !important;
   height: 30px;
   color: rgba(255,255,255,1);
   font-size: 14px;
@@ -222,7 +224,7 @@ const Rect8 = styled.div`
 
 const TextInput4 = styled.textarea`
   width: 300px;
-  font-family: Arial;
+  font-family: 	'Segoe UI Web Regular', 'Segoe UI', 'Segoe WP', Tahoma, Arial, sans-serif !important;
   top: 0px;
   left: 0px;
   color: rgba(255,255,255,1);

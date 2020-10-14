@@ -154,7 +154,7 @@ const Center = styled.div`
   `;
 
 const Text = styled.span`
-  font-family: IBM Plex Sans;
+  font-family: 	'Segoe UI Web Regular', 'Segoe UI', 'Segoe WP', Tahoma, Arial, sans-serif !important;
   color: #00000;
   position: absolute;
   font-size: 14px;
@@ -173,7 +173,7 @@ const MessagesTab = styled.div`
 `;
 
 const Text2 = styled.span`
-  font-family: IBM Plex Sans;
+  font-family: 	'Segoe UI Web Regular', 'Segoe UI', 'Segoe WP', Tahoma, Arial, sans-serif !important;
   color: #00000;
   position: absolute;
   font-size: 14px;
@@ -192,7 +192,7 @@ const ModMailTab = styled.div`
 `;
 
 const Text3 = styled.span`
-  font-family: IBM Plex Sans;
+  font-family: 	'Segoe UI Web Regular', 'Segoe UI', 'Segoe WP', Tahoma, Arial, sans-serif !important;
   left: 10.81%;
   color: #00000;
   position: absolute;
@@ -220,7 +220,7 @@ const Image = styled.img`
 `;
 
 const Text4 = styled.span`
-  font-family: IBM Plex Sans;
+  font-family: 	'Segoe UI Web Regular', 'Segoe UI', 'Segoe WP', Tahoma, Arial, sans-serif !important;
   left: 72px;
   color: #00000;
   position: absolute;
@@ -338,7 +338,7 @@ const PostDetails = styled.div`
 // `;
 
 // const Text = styled.span`
-//   font-family: IBM Plex Sans;
+//   font-family: 	'Segoe UI Web Regular', 'Segoe UI', 'Segoe WP', Tahoma, Arial, sans-serif !important;
 //   color: rgba(255,255,255,1);
 //   font-size: 20px;
 //   font-weight: regular;
@@ -346,7 +346,7 @@ const PostDetails = styled.div`
 // `;
 
 // const Text2 = styled.span`
-//   font-family: IBM Plex Sans;
+//   font-family: 	'Segoe UI Web Regular', 'Segoe UI', 'Segoe WP', Tahoma, Arial, sans-serif !important;
 //   color: rgba(128,128,128,1);
 //   font-size: 14px;
 //   font-weight: regular;
@@ -386,7 +386,7 @@ const Comment1 = styled.div`
 `;
 
 const Text9 = styled.span`
-  font-family: IBM Plex Sans;
+  font-family: 	'Segoe UI Web Regular', 'Segoe UI', 'Segoe WP', Tahoma, Arial, sans-serif !important;
   color: rgba(128,128,128,1);
   font-size: 12px;
   font-weight: regular;
@@ -394,7 +394,7 @@ const Text9 = styled.span`
 `;
 
 const Text10 = styled.span`
-  font-family: IBM Plex Sans;
+  font-family: 	'Segoe UI Web Regular', 'Segoe UI', 'Segoe WP', Tahoma, Arial, sans-serif !important;
   color: rgba(255,255,255,1);
   font-size: 14px;
   font-weight: regular;
@@ -421,7 +421,7 @@ const ReplyAction = styled.div`
 `;
 
 const Text16 = styled.span`
-  font-family: IBM Plex Sans;
+  font-family: 	'Segoe UI Web Regular', 'Segoe UI', 'Segoe WP', Tahoma, Arial, sans-serif !important;
   color: rgba(128,128,128,1);
   font-size: 12px;
   font-weight: regular;
@@ -448,7 +448,7 @@ const CommentVote = styled.div`
 `;
 
 const Text15 = styled.span`
-  font-family: IBM Plex Sans;
+  font-family: 	'Segoe UI Web Regular', 'Segoe UI', 'Segoe WP', Tahoma, Arial, sans-serif !important;
   color: #828384;
   align-self: center;
   font-size: 12px;
@@ -465,7 +465,7 @@ const Comment11 = styled.div`
 `;
 
 const Text11 = styled.span`
-  font-family: IBM Plex Sans;
+  font-family: 	'Segoe UI Web Regular', 'Segoe UI', 'Segoe WP', Tahoma, Arial, sans-serif !important;
   color: rgba(255,255,255,1);
   font-size: 14px;
   font-weight: regular;
@@ -474,7 +474,7 @@ const Text11 = styled.span`
 `;
 
 const Text12 = styled.span`
-  font-family: IBM Plex Sans;
+  font-family: 	'Segoe UI Web Regular', 'Segoe UI', 'Segoe WP', Tahoma, Arial, sans-serif !important;
   color: rgba(128,128,128,1);
   font-size: 12px;
   font-weight: regular;
@@ -519,7 +519,7 @@ justify-content: flex-start;
   flex-direction: column;
 */
 const Text17 = styled.span`
-  font-family: IBM Plex Sans;
+  font-family: 	'Segoe UI Web Regular', 'Segoe UI', 'Segoe WP', Tahoma, Arial, sans-serif !important;
   color: rgba(128,128,128,1);
   font-size: 12px;
   font-weight: regular;
@@ -546,7 +546,7 @@ const Rect5 = styled.div`
 `;
 
 const Text18 = styled.span`
-  font-family: IBM Plex Sans;
+  font-family: 	'Segoe UI Web Regular', 'Segoe UI', 'Segoe WP', Tahoma, Arial, sans-serif !important;
   color: #828384;
   font-size: 12px;
   font-weight: 400;
@@ -562,7 +562,7 @@ const Comment111 = styled.div`
 `;
 
 const Text13 = styled.span`
-  font-family: IBM Plex Sans;
+  font-family: 	'Segoe UI Web Regular', 'Segoe UI', 'Segoe WP', Tahoma, Arial, sans-serif !important;
   color: rgba(128,128,128,1);
   font-size: 12px;
   font-weight: regular;
@@ -570,7 +570,7 @@ const Text13 = styled.span`
 `;
 
 const Text14 = styled.span`
-  font-family: IBM Plex Sans;
+  font-family: 	'Segoe UI Web Regular', 'Segoe UI', 'Segoe WP', Tahoma, Arial, sans-serif !important;
   color: rgba(255,255,255,1);
   font-size: 14px;
   font-weight: regular;
@@ -597,7 +597,7 @@ const Rect7 = styled.div`
 `;
 
 const Text19 = styled.span`
-  font-family: IBM Plex Sans;
+  font-family: 	'Segoe UI Web Regular', 'Segoe UI', 'Segoe WP', Tahoma, Arial, sans-serif !important;
   color: rgba(128,128,128,1);
   font-size: 12px;
   font-weight: regular;
@@ -624,7 +624,7 @@ const Rect8 = styled.div`
 `;
 
 const Text20 = styled.span`
-  font-family: IBM Plex Sans;
+  font-family: 	'Segoe UI Web Regular', 'Segoe UI', 'Segoe WP', Tahoma, Arial, sans-serif !important;
   color: #828384;
   font-size: 12px;
   font-weight: 400;
@@ -654,7 +654,7 @@ const Group2 = styled.div`
 `;
 
 const TextInput = styled.input`
-  font-family: IBM Plex Sans;
+  font-family: 	'Segoe UI Web Regular', 'Segoe UI', 'Segoe WP', Tahoma, Arial, sans-serif !important;
   width: 100%;
   height: 32px;
   background-color: #1a1a1c;

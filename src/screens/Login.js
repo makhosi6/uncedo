@@ -13,8 +13,8 @@ function Login(props) {
             <Logo>
               <EndWrapperFiller></EndWrapperFiller>
               <Text3Column>
-                <Text3>bx</Text3>
-                <Rect7></Rect7>
+                {/* <Text3>bx</Text3>
+                <Rect7></Rect7> */}
               </Text3Column>
             </Logo>
             <Form>
@@ -51,7 +51,7 @@ function Login(props) {
                 </Password>
               </UsernameColumn>
               <UsernameColumnFiller></UsernameColumnFiller>
-              <Link to="/Channels">
+              <Link to="/">
                 <Button>
                   <ButtonOverlay>
                     <Text2>Get Started</Text2>
@@ -123,7 +123,7 @@ const EndWrapperFiller = styled.div`
 `;
 
 const Text3 = styled.span`
-  font-family: Arial;
+  font-family: 	'Segoe UI Web Regular', 'Segoe UI', 'Segoe WP', Tahoma, Arial, sans-serif !important;
   color: rgba(255,255,255,1);
   font-size: 96px;
   margin-bottom: 4px;
@@ -160,7 +160,7 @@ const Username = styled.div`
 `;
 
 const UsernameInput = styled.input`
-  font-family: Arial;
+  font-family: 	'Segoe UI Web Regular', 'Segoe UI', 'Segoe WP', Tahoma, Arial, sans-serif !important;
   height: 30px;
   color: rgba(255,255,255,1);
   flex: 1 1 0%;
@@ -183,7 +183,7 @@ const Password = styled.div`
 `;
 
 const PasswordInput = styled.input`
-  font-family: Arial;
+  font-family: 	'Segoe UI Web Regular', 'Segoe UI', 'Segoe WP', Tahoma, Arial, sans-serif !important;
   height: 30px;
   color: rgba(255,255,255,1);
   flex: 1 1 0%;
@@ -228,7 +228,7 @@ const Invisible = styled.div`
 `;
 
 const Text2 = styled.span`
-  font-family: Arial;
+  font-family: 	'Segoe UI Web Regular', 'Segoe UI', 'Segoe WP', Tahoma, Arial, sans-serif !important;
   color: rgba(255,255,255,1);
   font-weight: 600;
   align-self: center;
@@ -273,7 +273,7 @@ const CreateAccountFiller = styled.div`
 `;
 
 const CreateAccount = styled.span`
-  font-family: Arial;
+  font-family: 	'Segoe UI Web Regular', 'Segoe UI', 'Segoe WP', Tahoma, Arial, sans-serif !important;
   color: rgba(255,255,255,0.5);
 `;
 
@@ -285,7 +285,7 @@ const Button2Filler = styled.div`
 
 const NeedHelp = styled.span`
   text-decoration: none;
-  font-family: Arial;
+  font-family: 	'Segoe UI Web Regular', 'Segoe UI', 'Segoe WP', Tahoma, Arial, sans-serif !important;
   color: rgba(255,255,255,0.5);
   align-self: flex-end;
   margin-right: -1px;
