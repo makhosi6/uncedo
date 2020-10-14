@@ -66,8 +66,7 @@ function Feedback(props) {
           </Rect7>
         </Background>
         <Map>
-          <iframe title="8755vf65" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d6623.62629529462!2d18.5106174!3d-33.8944658!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x9f5bb7491ff8dca8!2sCanal%20Walk%20Shopping%20Centre!5e0!3m2!1sen!2sza!4v1602650797537!5m2!1sen!2sza" width="100%" height="100%" frameborder="0" 
-          style={{border:"0"}} allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+          <iframe title="8755vf65" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d6623.62629529462!2d18.5106174!3d-33.8944658!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x9f5bb7491ff8dca8!2sCanal%20Walk%20Shopping%20Centre!5e0!3m2!1sen!2sza!4v1602650797537!5m2!1sen!2sza" width="100%" height="450" frameborder="0" style={{border:"0"}} allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
           {/* <GoogleMapReact
             bootstrapURLKeys={{ key: "YOUR_API_KEY" }}
             defaultZoom={4}
